@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Mon Apr 16 11:44:38 2018
+# Process ID: 4972
+# Log file: C:/Work/Project_Testboard/Xilinx_project/testboard/planAhead_run_1/planAhead.log
+# Journal file: C:/Work/Project_Testboard/Xilinx_project/testboard/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Work/Project_Testboard/Xilinx_project/testboard/pa.fromNetlist.tcl

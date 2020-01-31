@@ -1,0 +1,48 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4
+top_modul.ngc top_modul.ngd
+
+Reading NGO file
+"C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "list1.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+INFO:ConstraintSystem:178 - TNM 'clk', used in period specification 'TS_clk',
+   was traced into DCM_SP instance dcm1/DCM_SP_INST. The following new TNM
+   groups and period specifications were generated at the DCM_SP output(s): 
+   CLKFX: <TIMESPEC TS_dcm1_CLKFX_BUF = PERIOD "dcm1_CLKFX_BUF" TS_clk / 3.2
+   HIGH 50%>
+
+Done...
+
+WARNING:NgdBuild:1212 - User specified non-default attribute value (50.000000)
+   was detected for the CLKIN_PERIOD attribute on DCM "dcm1/DCM_SP_INST".  This
+   does not match the PERIOD constraint value (20 ns.).  The uncertainty
+   calculation will use the non-default attribute value.  This could result in
+   incorrect uncertainty calculated for DCM output clocks.
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 167464 kilobytes
+
+Writing NGD file "top_modul.ngd" ...
+Total REAL time to NGDBUILD completion:  4 sec
+Total CPU time to NGDBUILD completion:   4 sec
+
+Writing NGDBUILD log file "top_modul.bld"...

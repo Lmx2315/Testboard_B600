@@ -1,0 +1,11 @@
+MO test_led NULL tst_rst_modul.v vlg40/test__led.bin 1523963303
+MO reset_long NULL reset_long.v vlg16/reset__long.bin 1523963303
+MO modul_t5min NULL modul_t5min.v vlg71/modul__t5min.bin 1523963303
+MO control_TNO_TNC NULL control_TNO_TNC.v vlg4D/control___t_n_o___t_n_c.bin 1523963303
+MO rst NULL tst_rst_modul.v vlg55/rst.bin 1523963303
+MO control_F5_F64 NULL control_F5_F64.v vlg42/control___f5___f64.bin 1523963303
+MO read_and_work NULL read_and_work.v vlg34/read__and__work.bin 1523963303
+MO dcm_clk NULL dcm_clk.v vlg35/dcm__clk.bin 1523963303
+MO top_modul NULL top_modul.v vlg5B/top__modul.bin 1523963303
+MO Block_control_spi NULL spi_modul.v vlg4A/_block__control__spi.bin 1523963303
+MO Block_upr_spi1 NULL spi_modul.v vlg49/_block__upr__spi1.bin 1523963303

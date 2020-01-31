@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -g -Map=pj1.map -O0 --gc-sections -lm -lgcc -lc -lstdc++ -LC:\CooCox\CoIDE\configuration\ProgramData\pj1 -TC:\CooCox\CoIDE\configuration\ProgramData\pj1/arm-gcc-link.ld -g">
+      <target file="pj1.elf" lastModified="16fe700be56">
+         <source file="..\obj\stm32f10x_tim.o" lastModified="16fe700ad69"/>
+         <source file="..\obj\eth.o" lastModified="16fe700ae4b"/>
+         <source file="..\obj\system_stm32f10x.o" lastModified="16fe700ae93"/>
+         <source file="..\obj\startup_stm32f10x_md.o" lastModified="16fe700aec7"/>
+         <source file="..\obj\stm32f10x_gpio.o" lastModified="16fe700af1f"/>
+         <source file="..\obj\main.o" lastModified="16fe700b678"/>
+         <source file="..\obj\stm32f10x_rcc.o" lastModified="16fe700b6da"/>
+         <source file="..\obj\stm32f10x_exti.o" lastModified="16fe700b725"/>
+         <source file="..\obj\stm32f10x_adc.o" lastModified="16fe700b78e"/>
+         <source file="..\obj\stm32f10x_usart.o" lastModified="16fe700b7f2"/>
+         <source file="..\obj\onewire.o" lastModified="16fe700b84e"/>
+         <source file="..\obj\syscalls.o" lastModified="16fe700b891"/>
+         <source file="..\obj\stm32f10x_dma.o" lastModified="16fe700b8e1"/>
+         <source file="..\obj\stm32f10x_spi.o" lastModified="16fe700b93e"/>
+         <source file="..\obj\stm32f10x_i2c.o" lastModified="16fe700b9a4"/>
+      </target>
+   </processor>
+</history>

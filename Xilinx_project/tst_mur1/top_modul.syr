@@ -1,0 +1,1970 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: top_modul.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_modul.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_modul"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-pq208
+
+---- Source Options
+Top Module Name                    : top_modul
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : Soft
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "tst_rst_modul.v" in library work
+Module <test_led> compiled
+Compiling verilog file "spi_modul.v" in library work
+Module <rst> compiled
+Module <Block_upr_spi1> compiled
+Compiling verilog file "reset_long.v" in library work
+Module <Block_control_spi> compiled
+Compiling verilog file "read_and_work.v" in library work
+Module <reset_long> compiled
+Compiling verilog file "modul_t5min.v" in library work
+Module <read_and_work> compiled
+Compiling verilog file "dcm_clk.v" in library work
+Module <modul_t5min> compiled
+Compiling verilog file "control_TNO_TNC.v" in library work
+Module <dcm_clk> compiled
+Compiling verilog file "control_F5_F64.v" in library work
+Module <control_TNO_TNC> compiled
+Compiling verilog file "top_modul.v" in library work
+Module <control_F5_F64> compiled
+Module <top_modul> compiled
+No errors in compilation
+Analysis of file <"top_modul.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <top_modul> in library <work>.
+
+Analyzing hierarchy for module <test_led> in library <work>.
+
+Analyzing hierarchy for module <modul_t5min> in library <work>.
+
+Analyzing hierarchy for module <control_F5_F64> in library <work>.
+
+Analyzing hierarchy for module <dcm_clk> in library <work>.
+
+Analyzing hierarchy for module <rst> in library <work>.
+
+Analyzing hierarchy for module <Block_control_spi> in library <work> with parameters.
+	Nbit = "00000000000000000000000000001000"
+	param_adr = "00000000000000000000000000000001"
+
+Analyzing hierarchy for module <Block_upr_spi1> in library <work> with parameters.
+	Nbit = "00000000000000000000000000010000"
+	param_adr = "00000000000000000000000000000010"
+
+Analyzing hierarchy for module <read_and_work> in library <work> with parameters.
+	Delay_RUN_COMMAND = "00000001"
+	NOT_SYNC_COMMAND = "10011001100110011111111111111111"
+	RESET_COMMAND = "10001000100010001111111111111111"
+	SYNC_COMMAND = "00010010001101001111111111111111"
+
+Analyzing hierarchy for module <control_TNO_TNC> in library <work>.
+
+Analyzing hierarchy for module <Block_control_spi> in library <work> with parameters.
+	Nbit = "00000000000000000000000000100000"
+	param_adr = "00000000000000000000000000010111"
+
+Analyzing hierarchy for module <Block_control_spi> in library <work> with parameters.
+	Nbit = "00000000000000000000000000100000"
+	param_adr = "00000000000000000000000000010110"
+
+Analyzing hierarchy for module <Block_control_spi> in library <work> with parameters.
+	Nbit = "00000000000000000000000000100000"
+	param_adr = "00000000000000000000000000010101"
+
+Analyzing hierarchy for module <Block_control_spi> in library <work> with parameters.
+	Nbit = "00000000000000000000000000100000"
+	param_adr = "00000000000000000000000000010100"
+
+Analyzing hierarchy for module <Block_control_spi> in library <work> with parameters.
+	Nbit = "00000000000000000000000000010000"
+	param_adr = "00000000000000000000000000010011"
+
+Analyzing hierarchy for module <Block_upr_spi1> in library <work> with parameters.
+	Nbit = "00000000000000000000000000100000"
+	param_adr = "00000000000000000000000000001010"
+
+Analyzing hierarchy for module <Block_upr_spi1> in library <work> with parameters.
+	Nbit = "00000000000000000000000000100000"
+	param_adr = "00000000000000000000000000001011"
+
+Analyzing hierarchy for module <Block_upr_spi1> in library <work> with parameters.
+	Nbit = "00000000000000000000000000100000"
+	param_adr = "00000000000000000000000000001100"
+
+Analyzing hierarchy for module <Block_upr_spi1> in library <work> with parameters.
+	Nbit = "00000000000000000000000000100000"
+	param_adr = "00000000000000000000000000001101"
+
+Analyzing hierarchy for module <Block_upr_spi1> in library <work> with parameters.
+	Nbit = "00000000000000000000000000100000"
+	param_adr = "00000000000000000000000000001110"
+
+Analyzing hierarchy for module <Block_upr_spi1> in library <work> with parameters.
+	Nbit = "00000000000000000000000000100000"
+	param_adr = "00000000000000000000000000001111"
+
+Analyzing hierarchy for module <Block_upr_spi1> in library <work> with parameters.
+	Nbit = "00000000000000000000000000100000"
+	param_adr = "00000000000000000000000000010000"
+
+Analyzing hierarchy for module <Block_upr_spi1> in library <work> with parameters.
+	Nbit = "00000000000000000000000000100000"
+	param_adr = "00000000000000000000000000010001"
+
+Analyzing hierarchy for module <reset_long> in library <work> with parameters.
+	delay = "00000000000000110000110101000000"
+
+Analyzing hierarchy for module <reset_long> in library <work> with parameters.
+	delay = "00000000000000000100111000100000"
+
+Analyzing hierarchy for module <reset_long> in library <work> with parameters.
+	delay = "00000000001111010000100100000000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <top_modul>.
+Module <top_modul> is correct for synthesis.
+ 
+Analyzing module <test_led> in library <work>.
+Module <test_led> is correct for synthesis.
+ 
+Analyzing module <modul_t5min> in library <work>.
+Module <modul_t5min> is correct for synthesis.
+ 
+Analyzing module <control_F5_F64> in library <work>.
+Module <control_F5_F64> is correct for synthesis.
+ 
+Analyzing module <dcm_clk> in library <work>.
+Module <dcm_clk> is correct for synthesis.
+ 
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <CLKIN_IBUFG_INST> in unit <dcm_clk>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <CLKIN_IBUFG_INST> in unit <dcm_clk>.
+    Set user-defined property "IBUF_LOW_PWR =  TRUE" for instance <CLKIN_IBUFG_INST> in unit <dcm_clk>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <CLKIN_IBUFG_INST> in unit <dcm_clk>.
+    Set user-defined property "CLKDV_DIVIDE =  4.000000" for instance <DCM_SP_INST> in unit <dcm_clk>.
+    Set user-defined property "CLKFX_DIVIDE =  5" for instance <DCM_SP_INST> in unit <dcm_clk>.
+    Set user-defined property "CLKFX_MULTIPLY =  16" for instance <DCM_SP_INST> in unit <dcm_clk>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_SP_INST> in unit <dcm_clk>.
+    Set user-defined property "CLKIN_PERIOD =  50.000000" for instance <DCM_SP_INST> in unit <dcm_clk>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_SP_INST> in unit <dcm_clk>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_SP_INST> in unit <dcm_clk>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_SP_INST> in unit <dcm_clk>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_SP_INST> in unit <dcm_clk>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_SP_INST> in unit <dcm_clk>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_SP_INST> in unit <dcm_clk>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_SP_INST> in unit <dcm_clk>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_SP_INST> in unit <dcm_clk>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_SP_INST> in unit <dcm_clk>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_SP_INST> in unit <dcm_clk>.
+Analyzing module <rst> in library <work>.
+Module <rst> is correct for synthesis.
+ 
+Analyzing module <Block_control_spi.1> in library <work>.
+	Nbit = 32'sb00000000000000000000000000001000
+	param_adr = 32'sb00000000000000000000000000000001
+Module <Block_control_spi.1> is correct for synthesis.
+ 
+Analyzing module <Block_upr_spi1.1> in library <work>.
+	Nbit = 32'sb00000000000000000000000000010000
+	param_adr = 32'sb00000000000000000000000000000010
+Module <Block_upr_spi1.1> is correct for synthesis.
+ 
+Analyzing module <read_and_work> in library <work>.
+	Delay_RUN_COMMAND = 8'b00000001
+	NOT_SYNC_COMMAND = 32'b10011001100110011111111111111111
+	RESET_COMMAND = 32'b10001000100010001111111111111111
+	SYNC_COMMAND = 32'b00010010001101001111111111111111
+Module <read_and_work> is correct for synthesis.
+ 
+Analyzing module <control_TNO_TNC> in library <work>.
+Module <control_TNO_TNC> is correct for synthesis.
+ 
+Analyzing module <Block_control_spi.2> in library <work>.
+	Nbit = 32'sb00000000000000000000000000100000
+	param_adr = 32'sb00000000000000000000000000010111
+Module <Block_control_spi.2> is correct for synthesis.
+ 
+Analyzing module <Block_control_spi.3> in library <work>.
+	Nbit = 32'sb00000000000000000000000000100000
+	param_adr = 32'sb00000000000000000000000000010110
+Module <Block_control_spi.3> is correct for synthesis.
+ 
+Analyzing module <Block_control_spi.4> in library <work>.
+	Nbit = 32'sb00000000000000000000000000100000
+	param_adr = 32'sb00000000000000000000000000010101
+Module <Block_control_spi.4> is correct for synthesis.
+ 
+Analyzing module <Block_control_spi.5> in library <work>.
+	Nbit = 32'sb00000000000000000000000000100000
+	param_adr = 32'sb00000000000000000000000000010100
+Module <Block_control_spi.5> is correct for synthesis.
+ 
+Analyzing module <Block_control_spi.6> in library <work>.
+	Nbit = 32'sb00000000000000000000000000010000
+	param_adr = 32'sb00000000000000000000000000010011
+Module <Block_control_spi.6> is correct for synthesis.
+ 
+Analyzing module <Block_upr_spi1.2> in library <work>.
+	Nbit = 32'sb00000000000000000000000000100000
+	param_adr = 32'sb00000000000000000000000000001010
+Module <Block_upr_spi1.2> is correct for synthesis.
+ 
+Analyzing module <Block_upr_spi1.3> in library <work>.
+	Nbit = 32'sb00000000000000000000000000100000
+	param_adr = 32'sb00000000000000000000000000001011
+Module <Block_upr_spi1.3> is correct for synthesis.
+ 
+Analyzing module <Block_upr_spi1.4> in library <work>.
+	Nbit = 32'sb00000000000000000000000000100000
+	param_adr = 32'sb00000000000000000000000000001100
+Module <Block_upr_spi1.4> is correct for synthesis.
+ 
+Analyzing module <Block_upr_spi1.5> in library <work>.
+	Nbit = 32'sb00000000000000000000000000100000
+	param_adr = 32'sb00000000000000000000000000001101
+Module <Block_upr_spi1.5> is correct for synthesis.
+ 
+Analyzing module <Block_upr_spi1.6> in library <work>.
+	Nbit = 32'sb00000000000000000000000000100000
+	param_adr = 32'sb00000000000000000000000000001110
+Module <Block_upr_spi1.6> is correct for synthesis.
+ 
+Analyzing module <Block_upr_spi1.7> in library <work>.
+	Nbit = 32'sb00000000000000000000000000100000
+	param_adr = 32'sb00000000000000000000000000001111
+Module <Block_upr_spi1.7> is correct for synthesis.
+ 
+Analyzing module <Block_upr_spi1.8> in library <work>.
+	Nbit = 32'sb00000000000000000000000000100000
+	param_adr = 32'sb00000000000000000000000000010000
+Module <Block_upr_spi1.8> is correct for synthesis.
+ 
+Analyzing module <Block_upr_spi1.9> in library <work>.
+	Nbit = 32'sb00000000000000000000000000100000
+	param_adr = 32'sb00000000000000000000000000010001
+Module <Block_upr_spi1.9> is correct for synthesis.
+ 
+Analyzing module <reset_long.1> in library <work>.
+	delay = 32'sb00000000000000110000110101000000
+Module <reset_long.1> is correct for synthesis.
+ 
+Analyzing module <reset_long.2> in library <work>.
+	delay = 32'sb00000000000000000100111000100000
+Module <reset_long.2> is correct for synthesis.
+ 
+Analyzing module <reset_long.3> in library <work>.
+	delay = 32'sb00000000001111010000100100000000
+Module <reset_long.3> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <test_led>.
+    Related source file is "tst_rst_modul.v".
+    Found 32-bit up counter for signal <sch>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <test_led> synthesized.
+
+
+Synthesizing Unit <modul_t5min>.
+    Related source file is "modul_t5min.v".
+    Found 1-bit register for signal <flag_t5min>.
+    Found 3-bit register for signal <front_1us>.
+    Found 32-bit up counter for signal <sch>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   4 D-type flip-flop(s).
+Unit <modul_t5min> synthesized.
+
+
+Synthesizing Unit <control_F5_F64>.
+    Related source file is "control_F5_F64.v".
+WARNING:Xst:646 - Signal <t1usREZ_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <t1us5_reg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <sch_fout> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <FLAG_ERROR5>.
+    Found 8-bit comparator greater for signal <FLAG_ERROR5$cmp_gt0000> created at line 81.
+    Found 1-bit register for signal <FLAG_ERROR64>.
+    Found 8-bit comparator greater for signal <FLAG_ERROR64$cmp_gt0000> created at line 82.
+    Found 5-bit register for signal <front_5>.
+    Found 5-bit register for signal <front_64>.
+    Found 8-bit up counter for signal <sch5>.
+    Found 8-bit up counter for signal <sch5_1us>.
+    Found 8-bit up counter for signal <sch64>.
+    Found 8-bit up counter for signal <sch_tst_5>.
+    Found 8-bit up counter for signal <sch_tst_64>.
+    Found 8-bit up counter for signal <sch_tst_Main>.
+    Found 8-bit up counter for signal <schREZ_1us>.
+    Summary:
+	inferred   7 Counter(s).
+	inferred  12 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <control_F5_F64> synthesized.
+
+
+Synthesizing Unit <rst>.
+    Related source file is "tst_rst_modul.v".
+    Found 32-bit register for signal <a>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <rst> synthesized.
+
+
+Synthesizing Unit <Block_control_spi_1>.
+    Related source file is "spi_modul.v".
+WARNING:Xst:1780 - Signal <data_port> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <flag>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | flag$not0000              (positive)           |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <data_in>.
+    Found 4-bit register for signal <front_clk_spi>.
+    Found 4-bit register for signal <front_cs_spi>.
+    Found 1-bit register for signal <r_w>.
+    Found 9-bit register for signal <reg_out>.
+    Found 8-bit register for signal <sch>.
+    Found 8-bit adder for signal <sch$share0000>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  34 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <Block_control_spi_1> synthesized.
+
+
+Synthesizing Unit <Block_upr_spi1_1>.
+    Related source file is "spi_modul.v".
+WARNING:Xst:653 - Signal <reg_out<16>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <reg_out<15:0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <flag>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <flag> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <flag> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <flag> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <flag> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 16-bit register for signal <data_in>.
+    Found 16-bit register for signal <data_out>.
+    Found 2-bit register for signal <flag>.
+    Found 4-bit register for signal <front_clk_spi>.
+    Found 4-bit register for signal <front_cs_spi>.
+    Found 1-bit register for signal <r_w>.
+    Found 8-bit register for signal <sch>.
+    Found 8-bit adder for signal <sch$share0000>.
+    Summary:
+	inferred  51 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <Block_upr_spi1_1> synthesized.
+
+
+Synthesizing Unit <read_and_work>.
+    Related source file is "read_and_work.v".
+WARNING:Xst:647 - Input <clk5mhz> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <tobm_end> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tobm_FLAG_CDC> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tobm_FLAG> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tnp_end> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tnp_FLAG_CDC> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tnp_FLAG> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tno_x_end> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tno_x_FLAG_CDC> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tno_x_FLAG> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tno_reg6> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tno_end> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tno_FLAG_CDC> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tno_FLAG> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tno1_reg5> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tno1_end> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tno1_FLAG_CDC> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tno1_FLAG> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tni_end> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tni_FLAG_CDC> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tni_FLAG> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tnc_reg6> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tnc_end> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tnc_FLAG_CDC> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tnc_FLAG> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tkp_end> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tkp_FLAG_CDC> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tkp_FLAG> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tki_end> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tki_FLAG_CDC> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tki_FLAG> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <tick6<3>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tick5> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tick3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tick1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <t1hz_reg6> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <t1hz_reg5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <t1hz_reg> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <t1hz_FLAG_CDC> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <t1hz_FLAG> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <sync_flag> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <reset_flag> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <reset_contol_TNO_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <i_izl_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <i_get_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <flg_trsp_control_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <flag_NOT_sync> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <flag_1hz_sync> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <delay_t1hz> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Tizl_ZERO_flag2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <Tizl_ZERO_flag> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <TOBM_rg5> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <TNP_rg5> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <TNO_rg5> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <TNO1_rg5> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <TNO1_rg2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <TNO1_rg> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <TNI_rg5> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <TNC_rg5> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <TKP_rg5> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <TKI_rg5> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <FLAG_data_in> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <FLAG_CDC_en> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ERROR_TKP> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <ERROR_TKI> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <CRC_control> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <CMND_rg5> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit register for signal <CMND_rg>.
+    Found 32-bit register for signal <CMND_rg2>.
+    Found 1-bit register for signal <CRC_control_reg1>.
+    Found 1-bit xor7 for signal <CRC_control_reg1$xor0000> created at line 565.
+    Found 16-bit up counter for signal <delay_tki>.
+    Found 16-bit comparator greatequal for signal <delay_tki$cmp_ge0000> created at line 503.
+    Found 16-bit up counter for signal <delay_tkp>.
+    Found 16-bit comparator greatequal for signal <delay_tkp$cmp_ge0000> created at line 500.
+    Found 16-bit up counter for signal <delay_tnc>.
+    Found 16-bit comparator greatequal for signal <delay_tnc$cmp_ge0000> created at line 512.
+    Found 16-bit up counter for signal <delay_tni>.
+    Found 16-bit comparator greatequal for signal <delay_tni$cmp_ge0000> created at line 506.
+    Found 16-bit up counter for signal <delay_tno>.
+    Found 16-bit comparator greatequal for signal <delay_tno$cmp_ge0000> created at line 515.
+    Found 16-bit register for signal <delay_tno1>.
+    Found 16-bit adder for signal <delay_tno1$addsub0000> created at line 523.
+    Found 16-bit comparator greatequal for signal <delay_tno1$cmp_ge0000> created at line 523.
+    Found 16-bit up counter for signal <delay_tno_x>.
+    Found 16-bit comparator greatequal for signal <delay_tno_x$cmp_ge0000> created at line 518.
+    Found 16-bit up counter for signal <delay_tnp>.
+    Found 16-bit comparator greatequal for signal <delay_tnp$cmp_ge0000> created at line 497.
+    Found 16-bit up counter for signal <delay_tobm>.
+    Found 16-bit comparator greatequal for signal <delay_tobm$cmp_ge0000> created at line 509.
+    Found 1-bit register for signal <ERROR_SUM_reg>.
+    Found 1-bit register for signal <ERROR_TNI>.
+    Found 1-bit register for signal <ERROR_TNP>.
+    Found 1-bit register for signal <flag_reset_from_TNO>.
+    Found 1-bit register for signal <flag_RESET_time>.
+    Found 1-bit register for signal <flag_RESET_time_OK>.
+    Found 1-bit register for signal <FLAG_tobm_reg>.
+    Found 16-bit register for signal <flg_control_reg>.
+    Found 1-bit register for signal <Interval_TI>.
+    Found 1-bit register for signal <Interval_TP>.
+    Found 1-bit register for signal <PPI_fail_reg>.
+    Found 8-bit up counter for signal <sch_sync_reg>.
+    Found 8-bit comparator greatequal for signal <sch_sync_reg$cmp_ge0000> created at line 321.
+    Found 4-bit register for signal <sync_reg>.
+    Found 4-bit register for signal <tick2>.
+    Found 4-bit register for signal <tick4>.
+    Found 4-bit register for signal <tick6>.
+    Found 4-bit register for signal <tick_TNO>.
+    Found 32-bit up counter for signal <time_from_start>.
+    Found 1-bit register for signal <time_rst_reg>.
+    Found 8-bit comparator less for signal <time_rst_reg$cmp_lt0000> created at line 321.
+    Found 1-bit register for signal <tki_reg>.
+    Found 16-bit comparator less for signal <tki_reg$cmp_lt0000> created at line 503.
+    Found 1-bit register for signal <tki_reg5>.
+    Found 1-bit register for signal <tki_reg6>.
+    Found 32-bit register for signal <TKI_rg>.
+    Found 32-bit comparator equal for signal <TKI_rg$cmp_eq0001> created at line 502.
+    Found 32-bit comparator not equal for signal <TKI_rg$cmp_ne0000> created at line 502.
+    Found 32-bit register for signal <TKI_rg2>.
+    Found 1-bit register for signal <tkp_reg>.
+    Found 16-bit comparator less for signal <tkp_reg$cmp_lt0000> created at line 500.
+    Found 1-bit register for signal <tkp_reg5>.
+    Found 1-bit register for signal <tkp_reg6>.
+    Found 32-bit register for signal <TKP_rg>.
+    Found 32-bit comparator equal for signal <TKP_rg$cmp_eq0001> created at line 499.
+    Found 32-bit comparator not equal for signal <TKP_rg$cmp_ne0000> created at line 499.
+    Found 32-bit register for signal <TKP_rg2>.
+    Found 1-bit register for signal <tnc_reg>.
+    Found 16-bit comparator less for signal <tnc_reg$cmp_lt0000> created at line 512.
+    Found 1-bit register for signal <tnc_reg5>.
+    Found 32-bit register for signal <TNC_rg>.
+    Found 32-bit comparator equal for signal <TNC_rg$cmp_eq0000> created at line 511.
+    Found 32-bit comparator not equal for signal <TNC_rg$cmp_ne0000> created at line 511.
+    Found 32-bit register for signal <TNC_rg2>.
+    Found 1-bit register for signal <tni_reg>.
+    Found 16-bit comparator less for signal <tni_reg$cmp_lt0000> created at line 506.
+    Found 1-bit register for signal <tni_reg5>.
+    Found 1-bit register for signal <tni_reg6>.
+    Found 32-bit register for signal <TNI_rg>.
+    Found 32-bit comparator equal for signal <TNI_rg$cmp_eq0001> created at line 505.
+    Found 32-bit comparator not equal for signal <TNI_rg$cmp_ne0000> created at line 505.
+    Found 32-bit register for signal <TNI_rg2>.
+    Found 1-bit register for signal <tno1_reg>.
+    Found 16-bit comparator less for signal <tno1_reg$cmp_lt0000> created at line 523.
+    Found 1-bit register for signal <tno_reg>.
+    Found 16-bit comparator less for signal <tno_reg$cmp_lt0000> created at line 515.
+    Found 1-bit register for signal <tno_reg5>.
+    Found 32-bit register for signal <TNO_rg>.
+    Found 32-bit comparator equal for signal <TNO_rg$cmp_eq0005> created at line 514.
+    Found 32-bit comparator not equal for signal <TNO_rg$cmp_ne0000> created at line 514.
+    Found 32-bit register for signal <TNO_rg2>.
+    Found 1-bit register for signal <tno_x_reg>.
+    Found 16-bit comparator less for signal <tno_x_reg$cmp_lt0000> created at line 518.
+    Found 1-bit register for signal <tno_x_reg5>.
+    Found 1-bit register for signal <tnp_reg>.
+    Found 16-bit comparator less for signal <tnp_reg$cmp_lt0000> created at line 497.
+    Found 1-bit register for signal <tnp_reg5>.
+    Found 1-bit register for signal <tnp_reg6>.
+    Found 32-bit register for signal <TNP_rg>.
+    Found 32-bit comparator equal for signal <TNP_rg$cmp_eq0001> created at line 496.
+    Found 32-bit comparator not equal for signal <TNP_rg$cmp_ne0000> created at line 496.
+    Found 32-bit register for signal <TNP_rg2>.
+    Found 1-bit register for signal <tobm_reg>.
+    Found 16-bit comparator less for signal <tobm_reg$cmp_lt0000> created at line 509.
+    Found 1-bit register for signal <tobm_reg5>.
+    Found 32-bit register for signal <TOBM_rg>.
+    Found 32-bit comparator equal for signal <TOBM_rg$cmp_eq0001> created at line 508.
+    Found 32-bit comparator not equal for signal <TOBM_rg$cmp_ne0000> created at line 508.
+    Found 32-bit register for signal <TOBM_rg2>.
+    Summary:
+	inferred  10 Counter(s).
+	inferred 597 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  34 Comparator(s).
+	inferred   1 Xor(s).
+Unit <read_and_work> synthesized.
+
+
+Synthesizing Unit <control_TNO_TNC>.
+    Related source file is "control_TNO_TNC.v".
+WARNING:Xst:1780 - Signal <tno_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <tnc_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <rst_reg> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit register for signal <front_rst>.
+    Found 4-bit register for signal <front_t1us>.
+    Found 4-bit register for signal <front_tnc>.
+    Found 4-bit register for signal <front_tno>.
+    Found 32-bit up counter for signal <tnc_reg1>.
+    Found 32-bit register for signal <tnc_reg2>.
+    Found 32-bit comparator greatequal for signal <tnc_reg2$cmp_ge0000> created at line 124.
+    Found 32-bit up counter for signal <tno_reg1>.
+    Found 32-bit register for signal <tno_reg2>.
+    Found 32-bit comparator greatequal for signal <tno_reg2$cmp_ge0000> created at line 125.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  80 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <control_TNO_TNC> synthesized.
+
+
+Synthesizing Unit <Block_control_spi_2>.
+    Related source file is "spi_modul.v".
+WARNING:Xst:1780 - Signal <data_port> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <data_in<31>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_1> for signal <flag>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | flag$not0000              (positive)           |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit register for signal <data_in>.
+    Found 4-bit register for signal <front_clk_spi>.
+    Found 4-bit register for signal <front_cs_spi>.
+    Found 1-bit register for signal <r_w>.
+    Found 33-bit register for signal <reg_out>.
+    Found 8-bit register for signal <sch>.
+    Found 8-bit adder for signal <sch$share0000>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  82 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <Block_control_spi_2> synthesized.
+
+
+Synthesizing Unit <Block_control_spi_3>.
+    Related source file is "spi_modul.v".
+WARNING:Xst:1780 - Signal <data_port> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <data_in<31>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_2> for signal <flag>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | flag$not0000              (positive)           |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit register for signal <data_in>.
+    Found 4-bit register for signal <front_clk_spi>.
+    Found 4-bit register for signal <front_cs_spi>.
+    Found 1-bit register for signal <r_w>.
+    Found 33-bit register for signal <reg_out>.
+    Found 8-bit register for signal <sch>.
+    Found 8-bit adder for signal <sch$share0000>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  82 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <Block_control_spi_3> synthesized.
+
+
+Synthesizing Unit <Block_control_spi_4>.
+    Related source file is "spi_modul.v".
+WARNING:Xst:1780 - Signal <data_port> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <data_in<31>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_3> for signal <flag>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | flag$not0000              (positive)           |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit register for signal <data_in>.
+    Found 4-bit register for signal <front_clk_spi>.
+    Found 4-bit register for signal <front_cs_spi>.
+    Found 1-bit register for signal <r_w>.
+    Found 33-bit register for signal <reg_out>.
+    Found 8-bit register for signal <sch>.
+    Found 8-bit adder for signal <sch$share0000>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  82 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <Block_control_spi_4> synthesized.
+
+
+Synthesizing Unit <Block_control_spi_5>.
+    Related source file is "spi_modul.v".
+WARNING:Xst:1780 - Signal <data_port> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <data_in<31>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_4> for signal <flag>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | flag$not0000              (positive)           |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit register for signal <data_in>.
+    Found 4-bit register for signal <front_clk_spi>.
+    Found 4-bit register for signal <front_cs_spi>.
+    Found 1-bit register for signal <r_w>.
+    Found 33-bit register for signal <reg_out>.
+    Found 8-bit register for signal <sch>.
+    Found 8-bit adder for signal <sch$share0000>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  82 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <Block_control_spi_5> synthesized.
+
+
+Synthesizing Unit <Block_control_spi_6>.
+    Related source file is "spi_modul.v".
+WARNING:Xst:1780 - Signal <data_port> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <data_in<15>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_5> for signal <flag>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 11                                             |
+    | Inputs             | 7                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | flag$not0000              (positive)           |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit register for signal <data_in>.
+    Found 4-bit register for signal <front_clk_spi>.
+    Found 4-bit register for signal <front_cs_spi>.
+    Found 1-bit register for signal <r_w>.
+    Found 17-bit register for signal <reg_out>.
+    Found 8-bit register for signal <sch>.
+    Found 8-bit adder for signal <sch$share0000>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  50 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <Block_control_spi_6> synthesized.
+
+
+Synthesizing Unit <Block_upr_spi1_2>.
+    Related source file is "spi_modul.v".
+WARNING:Xst:653 - Signal <reg_out<32>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <reg_out<31:0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <flag>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <flag> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <flag> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <flag> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <flag> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 32-bit register for signal <data_in>.
+    Found 32-bit 8-to-1 multiplexer for signal <data_in$mux0000>.
+    Found 32-bit register for signal <data_out>.
+    Found 2-bit register for signal <flag>.
+    Found 4-bit register for signal <front_clk_spi>.
+    Found 4-bit register for signal <front_cs_spi>.
+    Found 1-bit register for signal <r_w>.
+    Found 8-bit register for signal <sch>.
+    Found 8-bit adder for signal <sch$share0000>.
+    Summary:
+	inferred  83 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <Block_upr_spi1_2> synthesized.
+
+
+Synthesizing Unit <Block_upr_spi1_3>.
+    Related source file is "spi_modul.v".
+WARNING:Xst:653 - Signal <reg_out<32>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <reg_out<31:0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <flag>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <flag> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <flag> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <flag> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <flag> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 32-bit register for signal <data_in>.
+    Found 32-bit 8-to-1 multiplexer for signal <data_in$mux0000>.
+    Found 32-bit register for signal <data_out>.
+    Found 2-bit register for signal <flag>.
+    Found 4-bit register for signal <front_clk_spi>.
+    Found 4-bit register for signal <front_cs_spi>.
+    Found 1-bit register for signal <r_w>.
+    Found 8-bit register for signal <sch>.
+    Found 8-bit adder for signal <sch$share0000>.
+    Summary:
+	inferred  83 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <Block_upr_spi1_3> synthesized.
+
+
+Synthesizing Unit <Block_upr_spi1_4>.
+    Related source file is "spi_modul.v".
+WARNING:Xst:653 - Signal <reg_out<32>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <reg_out<31:0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <flag>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <flag> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <flag> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <flag> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <flag> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 32-bit register for signal <data_in>.
+    Found 32-bit 8-to-1 multiplexer for signal <data_in$mux0000>.
+    Found 32-bit register for signal <data_out>.
+    Found 2-bit register for signal <flag>.
+    Found 4-bit register for signal <front_clk_spi>.
+    Found 4-bit register for signal <front_cs_spi>.
+    Found 1-bit register for signal <r_w>.
+    Found 8-bit register for signal <sch>.
+    Found 8-bit adder for signal <sch$share0000>.
+    Summary:
+	inferred  83 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <Block_upr_spi1_4> synthesized.
+
+
+Synthesizing Unit <Block_upr_spi1_5>.
+    Related source file is "spi_modul.v".
+WARNING:Xst:653 - Signal <reg_out<32>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <reg_out<31:0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <flag>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <flag> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <flag> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <flag> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <flag> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 32-bit register for signal <data_in>.
+    Found 32-bit 8-to-1 multiplexer for signal <data_in$mux0000>.
+    Found 32-bit register for signal <data_out>.
+    Found 2-bit register for signal <flag>.
+    Found 4-bit register for signal <front_clk_spi>.
+    Found 4-bit register for signal <front_cs_spi>.
+    Found 1-bit register for signal <r_w>.
+    Found 8-bit register for signal <sch>.
+    Found 8-bit adder for signal <sch$share0000>.
+    Summary:
+	inferred  83 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <Block_upr_spi1_5> synthesized.
+
+
+Synthesizing Unit <Block_upr_spi1_6>.
+    Related source file is "spi_modul.v".
+WARNING:Xst:653 - Signal <reg_out<32>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <reg_out<31:0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <flag>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <flag> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <flag> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <flag> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <flag> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 32-bit register for signal <data_in>.
+    Found 32-bit 8-to-1 multiplexer for signal <data_in$mux0000>.
+    Found 32-bit register for signal <data_out>.
+    Found 2-bit register for signal <flag>.
+    Found 4-bit register for signal <front_clk_spi>.
+    Found 4-bit register for signal <front_cs_spi>.
+    Found 1-bit register for signal <r_w>.
+    Found 8-bit register for signal <sch>.
+    Found 8-bit adder for signal <sch$share0000>.
+    Summary:
+	inferred  83 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <Block_upr_spi1_6> synthesized.
+
+
+Synthesizing Unit <Block_upr_spi1_7>.
+    Related source file is "spi_modul.v".
+WARNING:Xst:653 - Signal <reg_out<32>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <reg_out<31:0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <flag>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <flag> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <flag> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <flag> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <flag> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 32-bit register for signal <data_in>.
+    Found 32-bit 8-to-1 multiplexer for signal <data_in$mux0000>.
+    Found 32-bit register for signal <data_out>.
+    Found 2-bit register for signal <flag>.
+    Found 4-bit register for signal <front_clk_spi>.
+    Found 4-bit register for signal <front_cs_spi>.
+    Found 1-bit register for signal <r_w>.
+    Found 8-bit register for signal <sch>.
+    Found 8-bit adder for signal <sch$share0000>.
+    Summary:
+	inferred  83 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <Block_upr_spi1_7> synthesized.
+
+
+Synthesizing Unit <Block_upr_spi1_8>.
+    Related source file is "spi_modul.v".
+WARNING:Xst:653 - Signal <reg_out<32>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <reg_out<31:0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <flag>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <flag> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <flag> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <flag> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <flag> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 32-bit register for signal <data_in>.
+    Found 32-bit 8-to-1 multiplexer for signal <data_in$mux0000>.
+    Found 32-bit register for signal <data_out>.
+    Found 2-bit register for signal <flag>.
+    Found 4-bit register for signal <front_clk_spi>.
+    Found 4-bit register for signal <front_cs_spi>.
+    Found 1-bit register for signal <r_w>.
+    Found 8-bit register for signal <sch>.
+    Found 8-bit adder for signal <sch$share0000>.
+    Summary:
+	inferred  83 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <Block_upr_spi1_8> synthesized.
+
+
+Synthesizing Unit <Block_upr_spi1_9>.
+    Related source file is "spi_modul.v".
+WARNING:Xst:653 - Signal <reg_out<32>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:1780 - Signal <reg_out<31:0>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <flag>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <flag> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <flag> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <flag> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <flag> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 32-bit register for signal <data_in>.
+    Found 32-bit 8-to-1 multiplexer for signal <data_in$mux0000>.
+    Found 32-bit register for signal <data_out>.
+    Found 2-bit register for signal <flag>.
+    Found 4-bit register for signal <front_clk_spi>.
+    Found 4-bit register for signal <front_cs_spi>.
+    Found 1-bit register for signal <r_w>.
+    Found 8-bit register for signal <sch>.
+    Found 8-bit adder for signal <sch$share0000>.
+    Summary:
+	inferred  83 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 Multiplexer(s).
+Unit <Block_upr_spi1_9> synthesized.
+
+
+Synthesizing Unit <reset_long_1>.
+    Related source file is "reset_long.v".
+    Found 1-bit register for signal <rst_reg>.
+    Found 32-bit up counter for signal <sch>.
+    Found 32-bit comparator less for signal <sch$cmp_lt0000> created at line 44.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <reset_long_1> synthesized.
+
+
+Synthesizing Unit <reset_long_2>.
+    Related source file is "reset_long.v".
+    Found 1-bit register for signal <rst_reg>.
+    Found 32-bit up counter for signal <sch>.
+    Found 32-bit comparator less for signal <sch$cmp_lt0000> created at line 44.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <reset_long_2> synthesized.
+
+
+Synthesizing Unit <reset_long_3>.
+    Related source file is "reset_long.v".
+    Found 1-bit register for signal <rst_reg>.
+    Found 32-bit up counter for signal <sch>.
+    Found 32-bit comparator less for signal <sch$cmp_lt0000> created at line 44.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <reset_long_3> synthesized.
+
+
+Synthesizing Unit <dcm_clk>.
+    Related source file is "dcm_clk.v".
+Unit <dcm_clk> synthesized.
+
+
+Synthesizing Unit <top_modul>.
+    Related source file is "top_modul.v".
+WARNING:Xst:647 - Input <IN_TNC_3V3_XP1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IN_TOBM_3V3_XP1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IN_TKP_3V3_XP1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <USART2_TX> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <TX_485_MG> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IN_TKP1_3V3_XP1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <TXD_FTDI_2> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IN_TNO24V_3V3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IN_TKI_1_3V3_XP1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IN_TKI_3V3_XP1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IN_TNP_3V3_XP1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IN_TNO_3V3_XP1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IN_TNC24V_3V3> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IN_TNI_1_3V3_XP1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <USART3_TX> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA_PD9> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IN_TNI_3V3_XP1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IN_REZERV_3V3_XP1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA_PD10> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA_PD11> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA_PD12> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IN_REZERV4_3V3_XP1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA_PD13> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA_PD14> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <DATA_PD15> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IN_T1_4_3V3_XP1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IN_REZERV3_3V3_XP1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IN_REZERV2_3V3_XP1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <IN_REZERV1_3V3_XP1> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk_50MHZ> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <xMISO_W5100> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <xMISO_MK6> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <xMISO_MK5> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <xMISO_MK4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <xMISO_MK3> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <xMISO_MK2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <xMISO_MK1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <xMISO_MK> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <wtst32> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wRESTART> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <dcm_locked> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ERROR64Mhz> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ERROR5Mhz> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32-bit up counter for signal <accum>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <top_modul> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 16
+ 16-bit adder                                          : 1
+ 8-bit adder                                           : 15
+# Counters                                             : 25
+ 16-bit up counter                                     : 8
+ 32-bit up counter                                     : 9
+ 8-bit up counter                                      : 8
+# Registers                                            : 172
+ 1-bit register                                        : 54
+ 16-bit register                                       : 5
+ 17-bit register                                       : 1
+ 2-bit register                                        : 9
+ 3-bit register                                        : 1
+ 32-bit register                                       : 40
+ 33-bit register                                       : 4
+ 4-bit register                                        : 39
+ 5-bit register                                        : 2
+ 8-bit register                                        : 16
+ 9-bit register                                        : 1
+# Comparators                                          : 41
+ 16-bit comparator greatequal                          : 9
+ 16-bit comparator less                                : 9
+ 32-bit comparator equal                               : 7
+ 32-bit comparator greatequal                          : 2
+ 32-bit comparator less                                : 3
+ 32-bit comparator not equal                           : 7
+ 8-bit comparator greatequal                           : 1
+ 8-bit comparator greater                              : 2
+ 8-bit comparator less                                 : 1
+# Multiplexers                                         : 8
+ 32-bit 8-to-1 multiplexer                             : 8
+# Xors                                                 : 1
+ 1-bit xor7                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_5> for best encoding.
+Optimizing FSM <spi_flg_control/flag/FSM> on signal <flag[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0
+ 0001  | 1
+-------------------
+Analyzing FSM <FSM_4> for best encoding.
+Optimizing FSM <spi_tst32/flag/FSM> on signal <flag[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0
+ 0001  | 1
+-------------------
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <spi_Time_TNC/flag/FSM> on signal <flag[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0
+ 0001  | 1
+-------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <spi_Time_TNO/flag/FSM> on signal <flag[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0
+ 0001  | 1
+-------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <spi_test/flag/FSM> on signal <flag[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0
+ 0001  | 1
+-------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <spi_control1/flag/FSM> on signal <flag[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0
+ 0001  | 1
+-------------------
+WARNING:Xst:1290 - Hierarchical block <spi_control1> is unconnected in block <top_modul>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <MCI_TNC_TNO> is unconnected in block <top_modul>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <spi_Time_TNO> is unconnected in block <top_modul>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <spi_Time_TNC> is unconnected in block <top_modul>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <spi_tst32> is unconnected in block <top_modul>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <spi_flg_control> is unconnected in block <top_modul>.
+   It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <CMND_rg2_0> in Unit <MFI> is equivalent to the following 15 FFs/Latches, which will be removed : <CMND_rg2_1> <CMND_rg2_2> <CMND_rg2_3> <CMND_rg2_4> <CMND_rg2_5> <CMND_rg2_6> <CMND_rg2_7> <CMND_rg2_8> <CMND_rg2_9> <CMND_rg2_10> <CMND_rg2_11> <CMND_rg2_12> <CMND_rg2_13> <CMND_rg2_14> <CMND_rg2_15> 
+WARNING:Xst:1426 - The value init of the FF/Latch a_31 hinder the constant cleaning in the block reset2.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch rst_reg hinder the constant cleaning in the block delay_WIZ.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch a_31 hinder the constant cleaning in the block reset1.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch rst_reg hinder the constant cleaning in the block rst_WIZ.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <front_clk_spi_3> has a constant value of 0 in block <spi_upr1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <CMND_rg2_0> has a constant value of 1 in block <MFI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PPI_fail_reg> has a constant value of 0 in block <MFI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <front_clk_spi_3> has a constant value of 0 in block <spi_TNO>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <front_clk_spi_3> has a constant value of 0 in block <spi_TNC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <front_clk_spi_3> has a constant value of 0 in block <spi_TOBM>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <front_clk_spi_3> has a constant value of 0 in block <spi_TNI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <front_clk_spi_3> has a constant value of 0 in block <spi_TKI>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <front_clk_spi_3> has a constant value of 0 in block <spi_TNP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <front_clk_spi_3> has a constant value of 0 in block <spi_TKP>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <front_clk_spi_3> has a constant value of 0 in block <spi_CMND>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <data_in_8> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_9> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_10> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_11> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_12> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_13> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_14> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_15> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_16> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_17> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_18> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_19> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_20> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_21> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_22> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_23> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_24> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_25> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_26> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_27> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_28> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_29> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_30> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_in_31> of sequential type is unconnected in block <spi_test>.
+WARNING:Xst:2677 - Node <data_out_0> of sequential type is unconnected in block <spi_CMND>.
+WARNING:Xst:2677 - Node <data_out_1> of sequential type is unconnected in block <spi_CMND>.
+WARNING:Xst:2677 - Node <data_out_2> of sequential type is unconnected in block <spi_CMND>.
+WARNING:Xst:2677 - Node <data_out_3> of sequential type is unconnected in block <spi_CMND>.
+WARNING:Xst:2677 - Node <data_out_4> of sequential type is unconnected in block <spi_CMND>.
+WARNING:Xst:2677 - Node <data_out_5> of sequential type is unconnected in block <spi_CMND>.
+WARNING:Xst:2677 - Node <data_out_6> of sequential type is unconnected in block <spi_CMND>.
+WARNING:Xst:2677 - Node <data_out_7> of sequential type is unconnected in block <spi_CMND>.
+WARNING:Xst:2677 - Node <flg_control_reg_7> of sequential type is unconnected in block <read_and_work>.
+WARNING:Xst:2677 - Node <flg_control_reg_10> of sequential type is unconnected in block <read_and_work>.
+WARNING:Xst:2677 - Node <flg_control_reg_11> of sequential type is unconnected in block <read_and_work>.
+WARNING:Xst:2677 - Node <flg_control_reg_12> of sequential type is unconnected in block <read_and_work>.
+WARNING:Xst:2677 - Node <flg_control_reg_13> of sequential type is unconnected in block <read_and_work>.
+WARNING:Xst:2677 - Node <flg_control_reg_14> of sequential type is unconnected in block <read_and_work>.
+WARNING:Xst:2677 - Node <flg_control_reg_15> of sequential type is unconnected in block <read_and_work>.
+WARNING:Xst:2677 - Node <data_in_8> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_9> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_10> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_11> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_12> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_13> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_14> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_15> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_16> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_17> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_18> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_19> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_20> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_21> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_22> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_23> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_24> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_25> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_26> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_27> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_28> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_29> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_30> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_31> of sequential type is unconnected in block <Block_control_spi_2>.
+WARNING:Xst:2677 - Node <data_in_8> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_9> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_10> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_11> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_12> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_13> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_14> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_15> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_16> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_17> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_18> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_19> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_20> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_21> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_22> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_23> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_24> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_25> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_26> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_27> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_28> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_29> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_30> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_31> of sequential type is unconnected in block <Block_control_spi_3>.
+WARNING:Xst:2677 - Node <data_in_8> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_9> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_10> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_11> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_12> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_13> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_14> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_15> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_16> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_17> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_18> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_19> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_20> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_21> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_22> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_23> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_24> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_25> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_26> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_27> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_28> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_29> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_30> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_31> of sequential type is unconnected in block <Block_control_spi_4>.
+WARNING:Xst:2677 - Node <data_in_8> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_9> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_10> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_11> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_12> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_13> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_14> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_15> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_16> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_17> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_18> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_19> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_20> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_21> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_22> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_23> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_24> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_25> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_26> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_27> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_28> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_29> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_30> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_31> of sequential type is unconnected in block <Block_control_spi_5>.
+WARNING:Xst:2677 - Node <data_in_8> of sequential type is unconnected in block <Block_control_spi_6>.
+WARNING:Xst:2677 - Node <data_in_9> of sequential type is unconnected in block <Block_control_spi_6>.
+WARNING:Xst:2677 - Node <data_in_10> of sequential type is unconnected in block <Block_control_spi_6>.
+WARNING:Xst:2677 - Node <data_in_11> of sequential type is unconnected in block <Block_control_spi_6>.
+WARNING:Xst:2677 - Node <data_in_12> of sequential type is unconnected in block <Block_control_spi_6>.
+WARNING:Xst:2677 - Node <data_in_13> of sequential type is unconnected in block <Block_control_spi_6>.
+WARNING:Xst:2677 - Node <data_in_14> of sequential type is unconnected in block <Block_control_spi_6>.
+WARNING:Xst:2677 - Node <data_in_15> of sequential type is unconnected in block <Block_control_spi_6>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 6
+# Adders/Subtractors                                   : 16
+ 16-bit adder                                          : 1
+ 8-bit adder                                           : 15
+# Counters                                             : 23
+ 16-bit up counter                                     : 8
+ 32-bit up counter                                     : 9
+ 8-bit up counter                                      : 6
+# Registers                                            : 1772
+ Flip-Flops                                            : 1772
+# Comparators                                          : 41
+ 16-bit comparator greatequal                          : 9
+ 16-bit comparator less                                : 9
+ 32-bit comparator equal                               : 7
+ 32-bit comparator greatequal                          : 2
+ 32-bit comparator less                                : 3
+ 32-bit comparator not equal                           : 7
+ 8-bit comparator greatequal                           : 1
+ 8-bit comparator greater                              : 2
+ 8-bit comparator less                                 : 1
+# Multiplexers                                         : 8
+ 32-bit 8-to-1 multiplexer                             : 8
+# Xors                                                 : 1
+ 1-bit xor7                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <top_modul>: instances <reset1>, <reset2> of unit <rst> are equivalent, second instance is removed
+WARNING:Xst:1426 - The value init of the FF/Latch a_31 hinder the constant cleaning in the block rst.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch <front_clk_spi_3> has a constant value of 0 in block <Block_upr_spi1_1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <PPI_fail_reg> has a constant value of 0 in block <read_and_work>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CMND_rg2_15> has a constant value of 1 in block <read_and_work>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CMND_rg2_14> has a constant value of 1 in block <read_and_work>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CMND_rg2_13> has a constant value of 1 in block <read_and_work>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CMND_rg2_12> has a constant value of 1 in block <read_and_work>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CMND_rg2_11> has a constant value of 1 in block <read_and_work>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CMND_rg2_10> has a constant value of 1 in block <read_and_work>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CMND_rg2_9> has a constant value of 1 in block <read_and_work>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CMND_rg2_8> has a constant value of 1 in block <read_and_work>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CMND_rg2_7> has a constant value of 1 in block <read_and_work>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CMND_rg2_6> has a constant value of 1 in block <read_and_work>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CMND_rg2_5> has a constant value of 1 in block <read_and_work>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CMND_rg2_4> has a constant value of 1 in block <read_and_work>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CMND_rg2_3> has a constant value of 1 in block <read_and_work>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CMND_rg2_2> has a constant value of 1 in block <read_and_work>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CMND_rg2_1> has a constant value of 1 in block <read_and_work>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <CMND_rg2_0> has a constant value of 1 in block <read_and_work>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <flg_control_reg_8> has a constant value of 0 in block <read_and_work>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <front_rst_0> has a constant value of 0 in block <control_TNO_TNC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <front_rst_1> has a constant value of 0 in block <control_TNO_TNC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <front_rst_2> has a constant value of 0 in block <control_TNO_TNC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <front_rst_3> has a constant value of 0 in block <control_TNO_TNC>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <front_clk_spi_3> has a constant value of 0 in block <Block_upr_spi1_2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <front_clk_spi_3> has a constant value of 0 in block <Block_upr_spi1_3>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <front_clk_spi_3> has a constant value of 0 in block <Block_upr_spi1_4>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <front_clk_spi_3> has a constant value of 0 in block <Block_upr_spi1_5>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <front_clk_spi_3> has a constant value of 0 in block <Block_upr_spi1_6>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <front_clk_spi_3> has a constant value of 0 in block <Block_upr_spi1_7>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <front_clk_spi_3> has a constant value of 0 in block <Block_upr_spi1_8>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <front_clk_spi_3> has a constant value of 0 in block <Block_upr_spi1_9>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch rst_reg hinder the constant cleaning in the block reset_long_2.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch rst_reg hinder the constant cleaning in the block reset_long_3.
+   You should achieve better results by setting this init to 1.
+INFO:Xst:2261 - The FF/Latch <CMND_rg_0> in Unit <read_and_work> is equivalent to the following 15 FFs/Latches, which will be removed : <CMND_rg_1> <CMND_rg_2> <CMND_rg_3> <CMND_rg_4> <CMND_rg_5> <CMND_rg_6> <CMND_rg_7> <CMND_rg_8> <CMND_rg_9> <CMND_rg_10> <CMND_rg_11> <CMND_rg_12> <CMND_rg_13> <CMND_rg_14> <CMND_rg_15> 
+WARNING:Xst:2677 - Node <sch_28> of sequential type is unconnected in block <test_led>.
+WARNING:Xst:2677 - Node <sch_29> of sequential type is unconnected in block <test_led>.
+WARNING:Xst:2677 - Node <sch_30> of sequential type is unconnected in block <test_led>.
+WARNING:Xst:2677 - Node <sch_31> of sequential type is unconnected in block <test_led>.
+WARNING:Xst:2677 - Node <sch64_6> of sequential type is unconnected in block <control_F5_F64>.
+WARNING:Xst:2677 - Node <sch64_7> of sequential type is unconnected in block <control_F5_F64>.
+WARNING:Xst:2677 - Node <sch5_1> of sequential type is unconnected in block <control_F5_F64>.
+WARNING:Xst:2677 - Node <sch5_2> of sequential type is unconnected in block <control_F5_F64>.
+WARNING:Xst:2677 - Node <sch5_3> of sequential type is unconnected in block <control_F5_F64>.
+WARNING:Xst:2677 - Node <sch5_4> of sequential type is unconnected in block <control_F5_F64>.
+WARNING:Xst:2677 - Node <sch5_5> of sequential type is unconnected in block <control_F5_F64>.
+WARNING:Xst:2677 - Node <sch5_6> of sequential type is unconnected in block <control_F5_F64>.
+WARNING:Xst:2677 - Node <sch5_7> of sequential type is unconnected in block <control_F5_F64>.
+
+Optimizing unit <top_modul> ...
+
+Optimizing unit <test_led> ...
+
+Optimizing unit <modul_t5min> ...
+
+Optimizing unit <control_F5_F64> ...
+
+Optimizing unit <rst> ...
+
+Optimizing unit <Block_control_spi_1> ...
+
+Optimizing unit <Block_upr_spi1_1> ...
+
+Optimizing unit <read_and_work> ...
+
+Optimizing unit <control_TNO_TNC> ...
+
+Optimizing unit <Block_control_spi_2> ...
+
+Optimizing unit <Block_control_spi_3> ...
+
+Optimizing unit <Block_control_spi_4> ...
+
+Optimizing unit <Block_control_spi_5> ...
+
+Optimizing unit <Block_control_spi_6> ...
+
+Optimizing unit <Block_upr_spi1_2> ...
+
+Optimizing unit <Block_upr_spi1_3> ...
+
+Optimizing unit <Block_upr_spi1_4> ...
+
+Optimizing unit <Block_upr_spi1_5> ...
+
+Optimizing unit <Block_upr_spi1_6> ...
+
+Optimizing unit <Block_upr_spi1_7> ...
+
+Optimizing unit <Block_upr_spi1_8> ...
+
+Optimizing unit <Block_upr_spi1_9> ...
+
+Optimizing unit <reset_long_1> ...
+
+Optimizing unit <reset_long_2> ...
+
+Optimizing unit <reset_long_3> ...
+
+Optimizing unit <dcm_clk> ...
+WARNING:Xst:2677 - Node <FLAG_ERROR5> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <FLAG_ERROR64> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <front_5_0> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <front_5_1> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <front_5_2> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <front_5_3> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <front_5_4> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <front_64_0> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <front_64_1> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <front_64_2> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <front_64_3> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <front_64_4> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_Main_0> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_Main_1> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_Main_2> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_Main_3> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_Main_4> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_Main_5> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_Main_6> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_Main_7> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch5_0> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_5_0> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_5_1> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_5_2> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_5_3> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_5_4> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_5_5> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_5_6> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_5_7> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_64_0> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_64_1> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_64_2> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_64_3> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_64_4> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_64_5> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_64_6> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:2677 - Node <sch_tst_64_7> of sequential type is unconnected in block <MF1US_controlCLK>.
+WARNING:Xst:1290 - Hierarchical block <spi_control1> is unconnected in block <top_modul>.
+   It will be removed from the design.
+WARNING:Xst:2677 - Node <flg_control_reg_0> of sequential type is unconnected in block <MFI>.
+WARNING:Xst:2677 - Node <flg_control_reg_1> of sequential type is unconnected in block <MFI>.
+WARNING:Xst:2677 - Node <flg_control_reg_2> of sequential type is unconnected in block <MFI>.
+WARNING:Xst:2677 - Node <flg_control_reg_3> of sequential type is unconnected in block <MFI>.
+WARNING:Xst:2677 - Node <flg_control_reg_4> of sequential type is unconnected in block <MFI>.
+WARNING:Xst:2677 - Node <flg_control_reg_5> of sequential type is unconnected in block <MFI>.
+WARNING:Xst:2677 - Node <flg_control_reg_6> of sequential type is unconnected in block <MFI>.
+WARNING:Xst:2677 - Node <flg_control_reg_9> of sequential type is unconnected in block <MFI>.
+WARNING:Xst:2677 - Node <ERROR_TNI> of sequential type is unconnected in block <MFI>.
+WARNING:Xst:2677 - Node <ERROR_TNP> of sequential type is unconnected in block <MFI>.
+WARNING:Xst:2677 - Node <ERROR_SUM_reg> of sequential type is unconnected in block <MFI>.
+WARNING:Xst:2677 - Node <tnc_reg5> of sequential type is unconnected in block <MFI>.
+WARNING:Xst:2677 - Node <tobm_reg5> of sequential type is unconnected in block <MFI>.
+WARNING:Xst:2677 - Node <CRC_control_reg1> of sequential type is unconnected in block <MFI>.
+WARNING:Xst:1290 - Hierarchical block <MCI_TNC_TNO> is unconnected in block <top_modul>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <spi_Time_TNO> is unconnected in block <top_modul>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <spi_Time_TNC> is unconnected in block <top_modul>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <spi_tst32> is unconnected in block <top_modul>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <spi_flg_control> is unconnected in block <top_modul>.
+   It will be removed from the design.
+WARNING:Xst:2677 - Node <data_out_0> of sequential type is unconnected in block <spi_CMND>.
+WARNING:Xst:2677 - Node <data_out_1> of sequential type is unconnected in block <spi_CMND>.
+WARNING:Xst:2677 - Node <data_out_2> of sequential type is unconnected in block <spi_CMND>.
+WARNING:Xst:2677 - Node <data_out_3> of sequential type is unconnected in block <spi_CMND>.
+WARNING:Xst:2677 - Node <data_out_4> of sequential type is unconnected in block <spi_CMND>.
+WARNING:Xst:2677 - Node <data_out_5> of sequential type is unconnected in block <spi_CMND>.
+WARNING:Xst:2677 - Node <data_out_6> of sequential type is unconnected in block <spi_CMND>.
+WARNING:Xst:2677 - Node <data_out_7> of sequential type is unconnected in block <spi_CMND>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top_modul, actual ratio is 28.
+
+Final Macro Processing ...
+
+Processing Unit <MFI> :
+	Found 2-bit shift register for signal <sync_reg_1>.
+	Found 2-bit shift register for signal <tick4_1>.
+	Found 2-bit shift register for signal <tick2_1>.
+	Found 2-bit shift register for signal <tick_TNO_1>.
+	Found 2-bit shift register for signal <tkp_reg6>.
+Unit <MFI> processed.
+
+Processing Unit <reset1> :
+	Found 32-bit shift register for signal <a_0>.
+Unit <reset1> processed.
+
+Processing Unit <spi_test> :
+INFO:Xst:741 - HDL ADVISOR - A 4-bit shift register was found for signal <reg_out_3> and currently occupies 4 logic cells (2 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:741 - HDL ADVISOR - A 5-bit shift register was found for signal <reg_out_13> and currently occupies 5 logic cells (2 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+INFO:Xst:741 - HDL ADVISOR - A 4-bit shift register was found for signal <reg_out_28> and currently occupies 4 logic cells (2 slices). Removing the set/reset logic would take advantage of SRL16 (and derived) primitives and reduce this to 1 logic cells (1 slices). Evaluate if the set/reset can be removed for this simple shift register. The majority of simple pipeline structures do not need to be set/reset operationally.
+Unit <spi_test> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1655
+ Flip-Flops                                            : 1655
+# Shift Registers                                      : 6
+ 2-bit shift register                                  : 5
+ 32-bit shift register                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top_modul.ngr
+Top Level Output File Name         : top_modul
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Soft
+
+Design Statistics
+# IOs                              : 132
+
+Cell Usage :
+# BELS                             : 2797
+#      GND                         : 11
+#      INV                         : 49
+#      LUT1                        : 374
+#      LUT2                        : 84
+#      LUT3                        : 150
+#      LUT4                        : 1082
+#      MUXCY                       : 619
+#      MUXF5                       : 41
+#      VCC                         : 9
+#      XORCY                       : 378
+# FlipFlops/Latches                : 1661
+#      FD                          : 153
+#      FDE                         : 867
+#      FDR                         : 1
+#      FDRE                        : 341
+#      FDRSE                       : 25
+#      FDSE                        : 274
+# Shift Registers                  : 7
+#      SRL16                       : 5
+#      SRL16E                      : 1
+#      SRLC16                      : 1
+# Clock Buffers                    : 5
+#      BUFG                        : 5
+# IO Buffers                       : 93
+#      IBUF                        : 10
+#      IBUFG                       : 1
+#      OBUF                        : 82
+# DCMs                             : 1
+#      DCM_SP                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500epq208-4 
+
+ Number of Slices:                     1251  out of   4656    26%  
+ Number of Slice Flip Flops:           1661  out of   9312    17%  
+ Number of 4 input LUTs:               1746  out of   9312    18%  
+    Number used as logic:              1739
+    Number used as Shift registers:       7
+ Number of IOs:                         132
+ Number of bonded IOBs:                  92  out of    158    58%  
+ Number of GCLKs:                         5  out of     24    20%  
+ Number of DCMs:                          1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | IBUFG+BUFG             | 955   |
+clk                                | DCM_SP_INST:CLKFX      | 6     |
+MF1US_controlCLK/sch64_0           | BUFG                   | 707   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 22.880ns (Maximum Frequency: 43.706MHz)
+   Minimum input arrival time before clock: 6.589ns
+   Maximum output required time after clock: 7.177ns
+   Maximum combinational path delay: 9.234ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 22.880ns (frequency: 43.706MHz)
+  Total number of paths / destination ports: 19146 / 2135
+-------------------------------------------------------------------------
+Delay:               1.430ns (Levels of Logic = 1)
+  Source:            MF1US_controlCLK/sch64_5 (FF)
+  Destination:       sync_t5min/front_1us_0 (FF)
+  Source Clock:      clk rising 3.2X
+  Destination Clock: clk rising
+
+  Data Path: MF1US_controlCLK/sch64_5 to sync_t5min/front_1us_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.591   0.531  sch64_5 (sch64_5)
+     end scope: 'MF1US_controlCLK'
+     begin scope: 'sync_t5min'
+     FD:D                      0.308          front_1us_0
+    ----------------------------------------
+    Total                      1.430ns (0.899ns logic, 0.531ns route)
+                                       (62.9% logic, 37.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'MF1US_controlCLK/sch64_0'
+  Clock period: 13.217ns (frequency: 75.662MHz)
+  Total number of paths / destination ports: 81225 / 1323
+-------------------------------------------------------------------------
+Delay:               13.217ns (Levels of Logic = 8)
+  Source:            MFI/CMND_rg_29 (FF)
+  Destination:       MFI/TOBM_rg_0 (FF)
+  Source Clock:      MF1US_controlCLK/sch64_0 rising
+  Destination Clock: MF1US_controlCLK/sch64_0 rising
+
+  Data Path: MFI/CMND_rg_29 to MFI/TOBM_rg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.595  CMND_rg_29 (CMND_rg_29)
+     LUT3:I0->O            1   0.704   0.424  TNO_rg_cmp_eq00021_SW0 (N53)
+     LUT4:I3->O            4   0.704   0.666  TNO_rg_cmp_eq00021 (N261)
+     LUT4:I1->O            1   0.704   0.424  TNO_rg_cmp_eq0003_SW1 (N69)
+     LUT4:I3->O            2   0.704   0.482  TNO_rg_cmp_eq0003 (TNO_rg_cmp_eq0003)
+     LUT4:I2->O           39   0.704   1.343  CMND_rg_or0001 (CMND_rg_or0001)
+     LUT4:I1->O            7   0.704   0.787  TKI_rg_not000231 (N29)
+     LUT4:I1->O            1   0.704   0.455  TOBM_rg_not0002_SW0 (N302)
+     LUT4:I2->O           32   0.704   1.262  TOBM_rg_not0002 (TOBM_rg_not0002)
+     FDE:CE                    0.555          TOBM_rg_0
+    ----------------------------------------
+    Total                     13.217ns (6.778ns logic, 6.439ns route)
+                                       (51.3% logic, 48.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 749 / 749
+-------------------------------------------------------------------------
+Offset:              6.589ns (Levels of Logic = 5)
+  Source:            CS_FPGA_MK (PAD)
+  Destination:       spi_upr1/r_w (FF)
+  Destination Clock: clk rising
+
+  Data Path: CS_FPGA_MK to spi_upr1/r_w
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            51   1.218   1.303  CS_FPGA_MK_IBUF (CS_FPGA_MK_IBUF)
+     begin scope: 'spi_upr1'
+     LUT3:I2->O            1   0.704   0.455  flag_not00011_SW0 (N2)
+     LUT4:I2->O            2   0.704   0.526  flag_not00011 (N24)
+     LUT2:I1->O            1   0.704   0.420  r_w_not00011 (r_w_not0001)
+     FDRE:CE                   0.555          r_w
+    ----------------------------------------
+    Total                      6.589ns (3.885ns logic, 2.704ns route)
+                                       (59.0% logic, 41.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'MF1US_controlCLK/sch64_0'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              2.059ns (Levels of Logic = 2)
+  Source:            DATA_PD8 (PAD)
+  Destination:       MFI/Mshreg_tick4_1 (FF)
+  Destination Clock: MF1US_controlCLK/sch64_0 rising
+
+  Data Path: DATA_PD8 to MFI/Mshreg_tick4_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  DATA_PD8_IBUF (DATA_PD8_IBUF)
+     begin scope: 'MFI'
+     SRL16:D                   0.421          Mshreg_tick4_1
+    ----------------------------------------
+    Total                      2.059ns (1.639ns logic, 0.420ns route)
+                                       (79.6% logic, 20.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 29 / 28
+-------------------------------------------------------------------------
+Offset:              7.177ns (Levels of Logic = 3)
+  Source:            MF1US_controlCLK/sch64_0 (FF)
+  Destination:       OUT_F_5MHZ_ETALON_3V3 (PAD)
+  Source Clock:      clk rising 3.2X
+
+  Data Path: MF1US_controlCLK/sch64_0 to OUT_F_5MHZ_ETALON_3V3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  sch64_0 (sch64_0)
+     BUFG:I->O           708   1.457   1.410  sch64_0_BUFG (f16)
+     end scope: 'MF1US_controlCLK'
+     OBUF:I->O                 3.272          OUT_F_5MHZ_ETALON_3V3_OBUF (OUT_F_5MHZ_ETALON_3V3)
+    ----------------------------------------
+    Total                      7.177ns (5.320ns logic, 1.857ns route)
+                                       (74.1% logic, 25.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'MF1US_controlCLK/sch64_0'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              4.683ns (Levels of Logic = 2)
+  Source:            MFI/tnc_reg (FF)
+  Destination:       OUT_TNC_3V3_XP2 (PAD)
+  Source Clock:      MF1US_controlCLK/sch64_0 rising
+
+  Data Path: MFI/tnc_reg to OUT_TNC_3V3_XP2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              9   0.591   0.820  tnc_reg (tnc_reg)
+     end scope: 'MFI'
+     OBUF:I->O                 3.272          OUT_TNC_3V3_XP2_OBUF (OUT_TNC_3V3_XP2)
+    ----------------------------------------
+    Total                      4.683ns (3.863ns logic, 0.820ns route)
+                                       (82.5% logic, 17.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Delay:               9.234ns (Levels of Logic = 4)
+  Source:            clk (PAD)
+  Destination:       OUT_REZERV_KONTR_3_3V3 (PAD)
+
+  Data Path: clk to OUT_REZERV_KONTR_3_3V3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     begin scope: 'dcm1'
+     IBUFG:I->O            1   2.675   0.420  CLKIN_IBUFG_INST (CLKIN_IBUFG1)
+     BUFG:I->O           956   1.457   1.410  CLKIN_IBUFG_BUFG (CLKIN_IBUFG_OUT)
+     end scope: 'dcm1'
+     OBUF:I->O                 3.272          OUT_REZERV_KONTR_3_3V3_OBUF (OUT_REZERV_KONTR_3_3V3)
+    ----------------------------------------
+    Total                      9.234ns (7.404ns logic, 1.830ns route)
+                                       (80.2% logic, 19.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 21.60 secs
+ 
+--> 
+
+Total memory usage is 320884 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  427 (   0 filtered)
+Number of infos    :   24 (   0 filtered)
+

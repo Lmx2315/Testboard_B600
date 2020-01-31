@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Work/Project_Testboard/Xilinx_project/testboard/usb_rezerv_test.v -lang verilog -prj testboard -o usb_test.spl -module usb_test -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e usb_test.spl C:/Work/Project_Testboard/Xilinx_project/testboard/usb_test.sym 

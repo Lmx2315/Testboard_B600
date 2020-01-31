@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Work/Project_Testboard/Xilinx_project/testboard/modul_t5min.v -lang verilog -prj testboard -o modul_t5min.spl -module modul_t5min -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e modul_t5min.spl C:/Work/Project_Testboard/Xilinx_project/testboard/modul_t5min.sym 

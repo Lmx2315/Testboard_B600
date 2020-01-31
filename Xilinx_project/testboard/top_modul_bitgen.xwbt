@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Work\Project_Testboard\Xilinx_project\testboard\top_modul.ncd
+OUTFILE=C:\Work\Project_Testboard\Xilinx_project\testboard\top_modul.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4pq208
+WORKINGDIR=C:\Work\Project_Testboard\Xilinx_project\testboard
+LICENSE=WebPack
+USER_INFO=__0_0_0

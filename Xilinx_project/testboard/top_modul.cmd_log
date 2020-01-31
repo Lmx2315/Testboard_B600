@@ -1,0 +1,706 @@
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+vhdtdtfi -lib work C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.v -lang verilog -prj testboard -o top_modul.spl -module top_modul -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e top_modul.spl C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.sym 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+vhdtdtfi -lib work C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.v -lang verilog -prj testboard -o top_modul.spl -module top_modul -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e top_modul.spl C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.sym 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul_cs.ngc top_modul.ngd  
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul_cs.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul_cs.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+vhdtdtfi -lib work C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.v -lang verilog -prj testboard -o top_modul.spl -module top_modul -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e top_modul.spl C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.sym 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+vhdtdtfi -lib work C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.v -lang verilog -prj testboard -o top_modul.spl -module top_modul -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e top_modul.spl C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.sym 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+vhdtdtfi -lib work C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.v -lang verilog -prj testboard -o top_modul.spl -module top_modul -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e top_modul.spl C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.sym 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+vhdtdtfi -lib work C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.v -lang verilog -prj testboard -o top_modul.spl -module top_modul -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e top_modul.spl C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.sym 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+vhdtdtfi -lib work C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.v -lang verilog -prj testboard -o top_modul.spl -module top_modul -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e top_modul.spl C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.sym 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+vhdtdtfi -lib work C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.v -lang verilog -prj testboard -o top_modul.spl -module top_modul -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e top_modul.spl C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.sym 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 
+xst -intstyle ise -ifn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.xst" -ofn "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc list1.ucf -p xc3s500e-pq208-4 top_modul.ngc top_modul.ngd  
+map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off -c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+par -w -intstyle ise -ol high -t 1 top_modul_map.ncd top_modul.ncd top_modul.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf -ucf list1.ucf 
+bitgen -intstyle ise -f top_modul.ut top_modul.ncd 

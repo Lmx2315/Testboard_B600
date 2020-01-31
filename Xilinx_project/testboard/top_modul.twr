@@ -1,0 +1,182 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml top_modul.twx top_modul.ncd -o top_modul.twr top_modul.pcf
+-ucf list1.ucf
+
+Design file:              top_modul.ncd
+Physical constraint file: top_modul.pcf
+Device,package,speed:     xc3s500e,pq208,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clk
+-------------------+------------+------------+---------------------------+--------+
+                   |Max Setup to|Max Hold to |                           | Clock  |
+Source             | clk (edge) | clk (edge) |Internal Clock(s)          | Phase  |
+-------------------+------------+------------+---------------------------+--------+
+CS_FPGA_MK         |   19.721(R)|   -3.880(R)|f64MHz_1                   |   0.000|
+DATA_PD8           |    4.712(R)|   -2.370(R)|f64MHz_1                   |   0.000|
+DATA_PD9           |    6.989(R)|   -2.606(R)|f64MHz_1                   |   0.000|
+DATA_PD10          |    2.506(R)|    0.985(R)|OUT_REZERV_KONTR_3_3V3_OBUF|   0.000|
+IN_FT50OM_3V3      |    5.708(R)|   -3.493(R)|f64MHz_1                   |   0.000|
+IN_REZERV1_3V3_XP1 |    4.971(R)|   -2.907(R)|f64MHz_1                   |   0.000|
+IN_REZERV2_3V3_XP1 |    4.409(R)|   -2.454(R)|f64MHz_1                   |   0.000|
+IN_REZERV3_3V3_XP1 |    4.159(R)|   -2.255(R)|f64MHz_1                   |   0.000|
+IN_REZERV4_3V3_XP1 |    4.478(R)|   -2.512(R)|f64MHz_1                   |   0.000|
+IN_REZERV_1_UPR_3V3|    5.814(R)|   -3.578(R)|f64MHz_1                   |   0.000|
+IN_REZERV_2_UPR_3V3|    5.589(R)|   -3.398(R)|f64MHz_1                   |   0.000|
+IN_REZERV_3V3_XP1  |    5.159(R)|   -3.053(R)|f64MHz_1                   |   0.000|
+IN_SYNC1_3V3       |    5.246(R)|   -3.125(R)|f64MHz_1                   |   0.000|
+IN_SYNC2_3V3       |    5.096(R)|   -3.007(R)|f64MHz_1                   |   0.000|
+IN_T1_4_3V3_XP1    |    2.834(R)|   -1.193(R)|f64MHz_1                   |   0.000|
+IN_TEST1_3V3       |    5.536(R)|   -3.356(R)|f64MHz_1                   |   0.000|
+IN_TEST2_3V3       |    4.512(R)|   -2.540(R)|f64MHz_1                   |   0.000|
+IN_TKI_1_3V3_XP1   |    3.076(R)|   -1.386(R)|f64MHz_1                   |   0.000|
+IN_TKI_3V3_XP1     |    3.992(R)|   -2.121(R)|f64MHz_1                   |   0.000|
+IN_TKP1_3V3_XP1    |    4.435(R)|   -2.471(R)|f64MHz_1                   |   0.000|
+IN_TKP_3V3_XP1     |    3.200(R)|   -1.487(R)|f64MHz_1                   |   0.000|
+IN_TNC24V_3V3      |    4.600(R)|   -2.271(R)|f64MHz_1                   |   0.000|
+IN_TNC_3V3_XP1     |    3.222(R)|   -1.506(R)|f64MHz_1                   |   0.000|
+IN_TNI_1_3V3_XP1   |    3.999(R)|   -2.133(R)|f64MHz_1                   |   0.000|
+IN_TNI_3V3_XP1     |    3.061(R)|   -1.385(R)|f64MHz_1                   |   0.000|
+IN_TNO24V_3V3      |    3.210(R)|   -1.163(R)|f64MHz_1                   |   0.000|
+IN_TNO_3V3_XP1     |    3.454(R)|   -1.692(R)|f64MHz_1                   |   0.000|
+IN_TNP_3V3_XP1     |    3.226(R)|   -1.512(R)|f64MHz_1                   |   0.000|
+IN_TOBM_3V3_XP1    |    3.263(R)|   -1.537(R)|f64MHz_1                   |   0.000|
+IN_VKL_COM_FT_3V3  |    5.198(R)|   -3.085(R)|f64MHz_1                   |   0.000|
+MOSI_MK            |   14.295(R)|   -4.964(R)|f64MHz_1                   |   0.000|
+RESET_MK_FTDI      |    1.807(R)|    1.024(R)|OUT_REZERV_KONTR_3_3V3_OBUF|   0.000|
+SCLK_MK            |   15.090(R)|   -6.508(R)|f64MHz_1                   |   0.000|
+-------------------+------------+------------+---------------------------+--------+
+
+Clock clk to Pad
+-------------------------+------------+---------------------------+--------+
+                         | clk (edge) |                           | Clock  |
+Destination              |   to PAD   |Internal Clock(s)          | Phase  |
+-------------------------+------------+---------------------------+--------+
+CS_W5100                 |   12.075(R)|OUT_REZERV_KONTR_3_3V3_OBUF|   0.000|
+DEBAG_PWM1               |    9.484(R)|OUT_REZERV_KONTR_3_3V3_OBUF|   0.000|
+DEBAG_PWM2               |    8.575(R)|OUT_REZERV_KONTR_3_3V3_OBUF|   0.000|
+INT2                     |    7.138(R)|f64MHz_1                   |   0.000|
+INT3                     |    8.553(R)|f64MHz_1                   |   0.000|
+INT4                     |   12.491(R)|f64MHz_1                   |   0.000|
+INT5                     |    6.146(R)|f64MHz_1                   |   0.000|
+INT6                     |    5.236(R)|f64MHz_1                   |   0.000|
+INTa                     |    9.283(R)|OUT_REZERV_KONTR_3_3V3_OBUF|   0.000|
+MISO_MK                  |   14.610(F)|f64MHz_1                   |   0.000|
+MOSI_W5100               |   12.614(R)|OUT_REZERV_KONTR_3_3V3_OBUF|   0.000|
+OUT_AVARIA_KAN_1_FT_3V3  |    6.705(R)|f64MHz_1                   |   0.000|
+OUT_AVARIA_KAN_2_FT_3V3  |    6.846(R)|f64MHz_1                   |   0.000|
+OUT_AVARIA_KAN_3_FT_3V3  |    6.913(R)|f64MHz_1                   |   0.000|
+OUT_AVARIA_KAN_4_FT_3V3  |    6.216(R)|f64MHz_1                   |   0.000|
+OUT_AVARIA_PIT_1_FT_3V3  |    5.544(R)|f64MHz_1                   |   0.000|
+OUT_AVARIA_PIT_2_FT_3V3  |    6.263(R)|f64MHz_1                   |   0.000|
+OUT_CONTROL_K1_3V3       |    5.764(R)|f64MHz_1                   |   0.000|
+OUT_CONTROL_K2_3V3       |    5.979(R)|f64MHz_1                   |   0.000|
+OUT_NORMA_TEMP_1U07FI_3V3|    6.932(R)|f64MHz_1                   |   0.000|
+OUT_NORM_PIT_1FT_3V3     |    5.800(R)|f64MHz_1                   |   0.000|
+OUT_NORM_PIT_2FT_3V3     |    5.972(R)|f64MHz_1                   |   0.000|
+OUT_PA_1U07_FI_3V3       |    6.919(R)|f64MHz_1                   |   0.000|
+OUT_RAB_KAN_1FT_3V3      |    5.805(R)|f64MHz_1                   |   0.000|
+OUT_RAB_KAN_2FT_3V3      |    5.550(R)|f64MHz_1                   |   0.000|
+OUT_RAB_KAN_3FT_3V3      |    5.897(R)|f64MHz_1                   |   0.000|
+OUT_RAB_KAN_4FT_3V3      |    6.497(R)|f64MHz_1                   |   0.000|
+OUT_REZERV1_3V3_XP2      |    5.495(R)|f64MHz_1                   |   0.000|
+OUT_REZERV2_3V3_XP2      |    5.882(R)|f64MHz_1                   |   0.000|
+OUT_REZERV3_3V3_XP2      |    7.810(R)|f64MHz_1                   |   0.000|
+OUT_REZERV_3V3_XP2       |   11.177(R)|OUT_REZERV_KONTR_3_3V3_OBUF|   0.000|
+                         |    8.683(R)|f64MHz_1                   |   0.000|
+OUT_REZERV_KONTR_1_3V3   |    6.091(R)|f64MHz_1                   |   0.000|
+OUT_REZERV_KONTR_2_3V3   |    6.723(R)|f64MHz_1                   |   0.000|
+OUT_T1_4_3V3_XP2         |    7.164(R)|f64MHz_1                   |   0.000|
+OUT_T5MIN_60SEC_3V3      |    5.996(R)|f64MHz_1                   |   0.000|
+OUT_TKI1_3V3_XP2         |    9.985(R)|f64MHz_1                   |   0.000|
+OUT_TKI_1_3V3_XP2        |    9.053(R)|f64MHz_1                   |   0.000|
+OUT_TKI_3V3_XP2          |    8.963(R)|f64MHz_1                   |   0.000|
+OUT_TKP1_3V3_XP2         |    9.273(R)|f64MHz_1                   |   0.000|
+OUT_TKP_3V3_XP2          |    9.273(R)|f64MHz_1                   |   0.000|
+OUT_TNC_3V3_XP2          |    7.458(R)|f64MHz_1                   |   0.000|
+OUT_TNI_1_3V3_XP2        |    8.786(R)|f64MHz_1                   |   0.000|
+OUT_TNI_3V3_XP2          |    8.250(R)|f64MHz_1                   |   0.000|
+OUT_TNO_3V3_XP2          |    8.200(R)|f64MHz_1                   |   0.000|
+OUT_TNP_3V3_XP2          |    8.890(R)|f64MHz_1                   |   0.000|
+OUT_TOBM_3V3_XP2         |    6.999(R)|f64MHz_1                   |   0.000|
+PWDWN_ETHERNET_PLIS      |   10.425(R)|OUT_REZERV_KONTR_3_3V3_OBUF|   0.000|
+RESET_MK                 |    7.918(R)|OUT_REZERV_KONTR_3_3V3_OBUF|   0.000|
+RESET_WIZ                |    8.758(R)|OUT_REZERV_KONTR_3_3V3_OBUF|   0.000|
+RTS_485                  |    7.603(R)|f64MHz_1                   |   0.000|
+SCLK_W5100               |   13.029(R)|OUT_REZERV_KONTR_3_3V3_OBUF|   0.000|
+SRAM_A17                 |    8.438(R)|OUT_REZERV_KONTR_3_3V3_OBUF|   0.000|
+TX_485_MG                |    6.732(R)|f64MHz_1                   |   0.000|
+-------------------------+------------+---------------------------+--------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   15.412|         |    3.765|         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+----------------------+---------+
+Source Pad     |Destination Pad       |  Delay  |
+---------------+----------------------+---------+
+BOOT0_FTDI     |BOOT0_FPGA            |    4.976|
+BOOT_TX_MK     |RX_FTDI_1             |    5.516|
+CS_WIZ         |CS_W5100              |    9.366|
+CS_WIZ         |MISO_MK               |   11.127|
+INT_W5100      |INT1                  |    5.849|
+IN_TNC_3V3_XP1 |OUT_F_5MHZ_ETALON_3V3 |    5.373|
+MISO_W5100     |MISO_MK               |   11.356|
+MOSI_MK        |MOSI_W5100            |   15.555|
+SCLK_MK        |SCLK_W5100            |   16.354|
+TX_FTDI_1      |BOOT_RX_MK            |    5.638|
+TX_FTDI_1      |OUT_REZERV4_3V3_XP2   |    8.542|
+USART2_TX      |OUT_TX_3V3_XP1        |    7.711|
+clk            |OUT_REZERV_KONTR_3_3V3|    8.768|
+---------------+----------------------+---------+
+
+
+Analysis completed Mon Jan 27 16:41:53 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 306 MB
+
+
+

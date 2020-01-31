@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Work/Project_Testboard/Xilinx_project/testboard/m1.v -lang verilog -prj testboard -o tst_sg1.spl -module tst_sg1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e tst_sg1.spl C:/Work/Project_Testboard/Xilinx_project/testboard/tst_sg1.sym 

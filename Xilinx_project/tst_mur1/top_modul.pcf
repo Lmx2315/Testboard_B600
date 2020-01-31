@@ -1,0 +1,754 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Apr 17 13:06:46 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "RESET_WIZ" LOCATE = SITE "P78" LEVEL 1;
+COMP "DEBAG_PWM1" LOCATE = SITE "P82" LEVEL 1;
+COMP "DEBAG_PWM2" LOCATE = SITE "P83" LEVEL 1;
+COMP "MOSI_W5100" LOCATE = SITE "P153" LEVEL 1;
+COMP "SRAM_A17" LOCATE = SITE "P55" LEVEL 1;
+COMP "RTS_485" LOCATE = SITE "P185" LEVEL 1;
+COMP "RESET_MK_FTDI" LOCATE = SITE "P24" LEVEL 1;
+COMP "clk" LOCATE = SITE "P180" LEVEL 1;
+COMP "clk_50MHZ" LOCATE = SITE "P183" LEVEL 1;
+COMP "OUT_TNC_3V3_XP2" LOCATE = SITE "P199" LEVEL 1;
+COMP "OUT_TKI_3V3_XP2" LOCATE = SITE "P94" LEVEL 1;
+COMP "INT1" LOCATE = SITE "P108" LEVEL 1;
+COMP "INT2" LOCATE = SITE "P106" LEVEL 1;
+COMP "INT3" LOCATE = SITE "P2" LEVEL 1;
+COMP "INT4" LOCATE = SITE "P3" LEVEL 1;
+COMP "INT5" LOCATE = SITE "P186" LEVEL 1;
+COMP "INT6" LOCATE = SITE "P189" LEVEL 1;
+COMP "INT7" LOCATE = SITE "P187" LEVEL 1;
+COMP "INT8" LOCATE = SITE "P146" LEVEL 1;
+COMP "INT9" LOCATE = SITE "P145" LEVEL 1;
+COMP "INTa" LOCATE = SITE "P112" LEVEL 1;
+COMP "USART2_RX" LOCATE = SITE "P74" LEVEL 1;
+COMP "USART2_TX" LOCATE = SITE "P75" LEVEL 1;
+COMP "USART3_RX" LOCATE = SITE "P76" LEVEL 1;
+COMP "USART3_TX" LOCATE = SITE "P72" LEVEL 1;
+COMP "OUT_TOBM_3V3_XP2" LOCATE = SITE "P200" LEVEL 1;
+COMP "RX_485_MG" LOCATE = SITE "P179" LEVEL 1;
+COMP "OUT_T5MIN_60SEC_3V3" LOCATE = SITE "P163" LEVEL 1;
+COMP "OUT_TEST1_3V3" LOCATE = SITE "P162" LEVEL 1;
+COMP "OUT_TEST2_3V3" LOCATE = SITE "P178" LEVEL 1;
+COMP "OUT_TEST3_3V3" LOCATE = SITE "P129" LEVEL 1;
+COMP "OUT_TNI_3V3_XP2" LOCATE = SITE "P93" LEVEL 1;
+COMP "TX_485_MG" LOCATE = SITE "P123" LEVEL 1;
+COMP "OUT_TKP_3V3_XP2" LOCATE = SITE "P203" LEVEL 1;
+COMP "OUT_REZERV_3V3_XP2" LOCATE = SITE "P193" LEVEL 1;
+COMP "RX_FTDI_1" LOCATE = SITE "P25" LEVEL 1;
+COMP "IN_REZERV_3V3_XP1" LOCATE = SITE "P168" LEVEL 1;
+COMP "PWDWN_ETHERNET_PLIS" LOCATE = SITE "P77" LEVEL 1;
+COMP "OUT_REZERV_KONTR_1_3V3" LOCATE = SITE "P9" LEVEL 1;
+COMP "OUT_REZERV_KONTR_2_3V3" LOCATE = SITE "P8" LEVEL 1;
+COMP "OUT_REZERV_KONTR_3_3V3" LOCATE = SITE "P150" LEVEL 1;
+COMP "OUT_REZERV_KONTR_4_3V3" LOCATE = SITE "P151" LEVEL 1;
+COMP "TX_FTDI_1" LOCATE = SITE "P28" LEVEL 1;
+COMP "OUT_TKI_1_3V3_XP2" LOCATE = SITE "P109" LEVEL 1;
+COMP "BOOT0_FPGA" LOCATE = SITE "P22" LEVEL 1;
+COMP "BOOT0_FTDI" LOCATE = SITE "P23" LEVEL 1;
+COMP "OUT_NORMA_TEMP_1U07FI_3V3" LOCATE = SITE "P11" LEVEL 1;
+COMP "OUT_TKI1_3V3_XP2" LOCATE = SITE "P190" LEVEL 1;
+COMP "OUT_TNO_3V3_XP2" LOCATE = SITE "P197" LEVEL 1;
+COMP "RXD_FTDI_2" LOCATE = SITE "P126" LEVEL 1;
+COMP "OUT_AVARIA_KAN_1_FT_3V3" LOCATE = SITE "P5" LEVEL 1;
+COMP "OUT_AVARIA_KAN_2_FT_3V3" LOCATE = SITE "P4" LEVEL 1;
+COMP "OUT_TNP_3V3_XP2" LOCATE = SITE "P205" LEVEL 1;
+COMP "OUT_AVARIA_KAN_3_FT_3V3" LOCATE = SITE "P15" LEVEL 1;
+COMP "OUT_AVARIA_KAN_4_FT_3V3" LOCATE = SITE "P144" LEVEL 1;
+COMP "IN_TNC24V_3V3" LOCATE = SITE "P101" LEVEL 1;
+COMP "IN_TKI_3V3_XP1" LOCATE = SITE "P127" LEVEL 1;
+COMP "IN_TNC_3V3_XP1" LOCATE = SITE "P175" LEVEL 1;
+COMP "IN_TNI_1_3V3_XP1" LOCATE = SITE "P113" LEVEL 1;
+COMP "IN_REZERV_1_UPR_3V3" LOCATE = SITE "P51" LEVEL 1;
+COMP "CS_WIZ" LOCATE = SITE "P130" LEVEL 1;
+COMP "RE_485" LOCATE = SITE "P177" LEVEL 1;
+COMP "OUT_F_5MHZ_ETALON_3V3" LOCATE = SITE "P164" LEVEL 1;
+COMP "TXD_FTDI_2" LOCATE = SITE "P204" LEVEL 1;
+COMP "IN_TKP1_3V3_XP1" LOCATE = SITE "P89" LEVEL 1;
+COMP "IN_REZERV_2_UPR_3V3" LOCATE = SITE "P54" LEVEL 1;
+COMP "BOOT_RX_MK" LOCATE = SITE "P16" LEVEL 1;
+COMP "BOOT_TX_MK" LOCATE = SITE "P18" LEVEL 1;
+COMP "OUT_AVARIA_PIT_1_FT_3V3" LOCATE = SITE "P140" LEVEL 1;
+COMP "OUT_AVARIA_PIT_2_FT_3V3" LOCATE = SITE "P137" LEVEL 1;
+COMP "DATA_PD10" LOCATE = SITE "P33" LEVEL 1;
+COMP "DATA_PD11" LOCATE = SITE "P31" LEVEL 1;
+COMP "DATA_PD12" LOCATE = SITE "P30" LEVEL 1;
+COMP "DATA_PD13" LOCATE = SITE "P29" LEVEL 1;
+COMP "DATA_PD14" LOCATE = SITE "P171" LEVEL 1;
+COMP "DATA_PD15" LOCATE = SITE "P122" LEVEL 1;
+COMP "IN_TNO24V_3V3" LOCATE = SITE "P148" LEVEL 1;
+COMP "IN_TNI_3V3_XP1" LOCATE = SITE "P115" LEVEL 1;
+COMP "IN_TKP_3V3_XP1" LOCATE = SITE "P97" LEVEL 1;
+COMP "IN_T1_4_3V3_XP1" LOCATE = SITE "P69" LEVEL 1;
+COMP "CS_FPGA_MK" LOCATE = SITE "P49" LEVEL 1;
+COMP "OUT_TKP1_3V3_XP2" LOCATE = SITE "P202" LEVEL 1;
+COMP "IN_TNO_3V3_XP1" LOCATE = SITE "P174" LEVEL 1;
+COMP "IN_FT50OM_3V3" LOCATE = SITE "P110" LEVEL 1;
+COMP "DATA_PD8" LOCATE = SITE "P35" LEVEL 1;
+COMP "DATA_PD9" LOCATE = SITE "P34" LEVEL 1;
+COMP "OUT_REZERV1_3V3_XP2" LOCATE = SITE "P128" LEVEL 1;
+COMP "IN_TNP_3V3_XP1" LOCATE = SITE "P96" LEVEL 1;
+COMP "IN_TEST1_3V3" LOCATE = SITE "P124" LEVEL 1;
+COMP "IN_TEST2_3V3" LOCATE = SITE "P118" LEVEL 1;
+COMP "OUT_REZERV2_3V3_XP2" LOCATE = SITE "P167" LEVEL 1;
+COMP "IN_REZERV1_3V3_XP1" LOCATE = SITE "P161" LEVEL 1;
+COMP "OUT_REZERV3_3V3_XP2" LOCATE = SITE "P165" LEVEL 1;
+COMP "IN_REZERV2_3V3_XP1" LOCATE = SITE "P160" LEVEL 1;
+COMP "IN_TKI_1_3V3_XP1" LOCATE = SITE "P71" LEVEL 1;
+COMP "OUT_REZERV4_3V3_XP2" LOCATE = SITE "P196" LEVEL 1;
+COMP "IN_REZERV3_3V3_XP1" LOCATE = SITE "P159" LEVEL 1;
+COMP "MISO_W5100" LOCATE = SITE "P152" LEVEL 1;
+COMP "OUT_REZERV5_3V3_XP1" LOCATE = SITE "P90" LEVEL 1;
+COMP "CS_W5100" LOCATE = SITE "P116" LEVEL 1;
+COMP "OUT_PA_1U07_FI_3V3" LOCATE = SITE "P68" LEVEL 1;
+COMP "IN_REZERV4_3V3_XP1" LOCATE = SITE "P169" LEVEL 1;
+COMP "IN_TOBM_3V3_XP1" LOCATE = SITE "P147" LEVEL 1;
+COMP "INT_W5100" LOCATE = SITE "P98" LEVEL 1;
+COMP "IN_VKL_COM_FT_3V3" LOCATE = SITE "P43" LEVEL 1;
+COMP "OUT_T1_4_3V3_XP2" LOCATE = SITE "P192" LEVEL 1;
+COMP "SCLK_W5100" LOCATE = SITE "P107" LEVEL 1;
+COMP "OUT_RAB_KAN_1FT_3V3" LOCATE = SITE "P135" LEVEL 1;
+COMP "OUT_RAB_KAN_2FT_3V3" LOCATE = SITE "P134" LEVEL 1;
+COMP "OUT_NORM_PIT_1FT_3V3" LOCATE = SITE "P138" LEVEL 1;
+COMP "OUT_RAB_KAN_3FT_3V3" LOCATE = SITE "P133" LEVEL 1;
+COMP "IN_SYNC1_3V3" LOCATE = SITE "P136" LEVEL 1;
+COMP "OUT_TX_3V3_XP1" LOCATE = SITE "P181" LEVEL 1;
+COMP "IN_SYNC2_3V3" LOCATE = SITE "P142" LEVEL 1;
+COMP "OUT_NORM_PIT_2FT_3V3" LOCATE = SITE "P139" LEVEL 1;
+COMP "OUT_RAB_KAN_4FT_3V3" LOCATE = SITE "P132" LEVEL 1;
+COMP "OUT_TNI_1_3V3_XP2" LOCATE = SITE "P12" LEVEL 1;
+COMP "MK_DATA0" LOCATE = SITE "P64" LEVEL 1;
+COMP "MK_DATA1" LOCATE = SITE "P63" LEVEL 1;
+COMP "MK_DATA2" LOCATE = SITE "P62" LEVEL 1;
+COMP "MK_DATA3" LOCATE = SITE "P45" LEVEL 1;
+COMP "MK_DATA4" LOCATE = SITE "P42" LEVEL 1;
+COMP "MK_DATA5" LOCATE = SITE "P41" LEVEL 1;
+COMP "MK_DATA6" LOCATE = SITE "P40" LEVEL 1;
+COMP "MK_DATA7" LOCATE = SITE "P39" LEVEL 1;
+COMP "MK_DATA8" LOCATE = SITE "P36" LEVEL 1;
+COMP "MISO_MK" LOCATE = SITE "P48" LEVEL 1;
+COMP "OUT_CONTROL_K1_3V3" LOCATE = SITE "P119" LEVEL 1;
+COMP "OUT_CONTROL_K2_3V3" LOCATE = SITE "P120" LEVEL 1;
+COMP "SCLK_MK" LOCATE = SITE "P50" LEVEL 1;
+COMP "RESET_MK" LOCATE = SITE "P19" LEVEL 1;
+COMP "MOSI_MK" LOCATE = SITE "P47" LEVEL 1;
+NET "OUT_REZERV_KONTR_3_3V3_OBUF1" BEL
+        "OUT_REZERV_KONTR_3_3V3_OBUF_BUFG.GCLKMUX" USELOCALCONNECT;
+PIN dcm1/DCM_SP_INST_pins<3> = BEL "dcm1/DCM_SP_INST" PINNAME CLKIN;
+TIMEGRP clk = BEL "rst_mk/rst_reg" BEL "rst_WIZ/rst_reg" BEL
+        "delay_WIZ/rst_reg" BEL "accum_0" BEL "accum_1" BEL "accum_2" BEL
+        "accum_3" BEL "accum_4" BEL "accum_5" BEL "accum_6" BEL "accum_7" BEL
+        "accum_8" BEL "accum_9" BEL "accum_10" BEL "accum_11" BEL "accum_12"
+        BEL "accum_13" BEL "accum_14" BEL "accum_15" BEL "accum_16" BEL
+        "accum_17" BEL "accum_18" BEL "accum_19" BEL "accum_20" BEL "accum_21"
+        BEL "accum_22" BEL "accum_23" BEL "accum_24" BEL "accum_25" BEL
+        "accum_26" BEL "accum_27" BEL "accum_28" BEL "accum_29" BEL "accum_30"
+        BEL "accum_31" BEL "rst_mk/sch_0" BEL "rst_mk/sch_1" BEL
+        "rst_mk/sch_2" BEL "rst_mk/sch_3" BEL "rst_mk/sch_4" BEL
+        "rst_mk/sch_5" BEL "rst_mk/sch_6" BEL "rst_mk/sch_7" BEL
+        "rst_mk/sch_8" BEL "rst_mk/sch_9" BEL "rst_mk/sch_10" BEL
+        "rst_mk/sch_11" BEL "rst_mk/sch_12" BEL "rst_mk/sch_13" BEL
+        "rst_mk/sch_14" BEL "rst_mk/sch_15" BEL "rst_mk/sch_16" BEL
+        "rst_mk/sch_17" BEL "rst_mk/sch_18" BEL "rst_mk/sch_19" BEL
+        "rst_mk/sch_20" BEL "rst_mk/sch_21" BEL "rst_mk/sch_22" BEL
+        "rst_mk/sch_23" BEL "rst_mk/sch_24" BEL "rst_mk/sch_25" BEL
+        "rst_mk/sch_26" BEL "rst_mk/sch_27" BEL "rst_mk/sch_28" BEL
+        "rst_mk/sch_29" BEL "rst_mk/sch_30" BEL "rst_mk/sch_31" BEL
+        "rst_WIZ/sch_0" BEL "rst_WIZ/sch_1" BEL "rst_WIZ/sch_2" BEL
+        "rst_WIZ/sch_3" BEL "rst_WIZ/sch_4" BEL "rst_WIZ/sch_5" BEL
+        "rst_WIZ/sch_6" BEL "rst_WIZ/sch_7" BEL "rst_WIZ/sch_8" BEL
+        "rst_WIZ/sch_9" BEL "rst_WIZ/sch_10" BEL "rst_WIZ/sch_11" BEL
+        "rst_WIZ/sch_12" BEL "rst_WIZ/sch_13" BEL "rst_WIZ/sch_14" BEL
+        "rst_WIZ/sch_15" BEL "rst_WIZ/sch_16" BEL "rst_WIZ/sch_17" BEL
+        "rst_WIZ/sch_18" BEL "rst_WIZ/sch_19" BEL "rst_WIZ/sch_20" BEL
+        "rst_WIZ/sch_21" BEL "rst_WIZ/sch_22" BEL "rst_WIZ/sch_23" BEL
+        "rst_WIZ/sch_24" BEL "rst_WIZ/sch_25" BEL "rst_WIZ/sch_26" BEL
+        "rst_WIZ/sch_27" BEL "rst_WIZ/sch_28" BEL "rst_WIZ/sch_29" BEL
+        "rst_WIZ/sch_30" BEL "rst_WIZ/sch_31" BEL "delay_WIZ/sch_0" BEL
+        "delay_WIZ/sch_1" BEL "delay_WIZ/sch_2" BEL "delay_WIZ/sch_3" BEL
+        "delay_WIZ/sch_4" BEL "delay_WIZ/sch_5" BEL "delay_WIZ/sch_6" BEL
+        "delay_WIZ/sch_7" BEL "delay_WIZ/sch_8" BEL "delay_WIZ/sch_9" BEL
+        "delay_WIZ/sch_10" BEL "delay_WIZ/sch_11" BEL "delay_WIZ/sch_12" BEL
+        "delay_WIZ/sch_13" BEL "delay_WIZ/sch_14" BEL "delay_WIZ/sch_15" BEL
+        "delay_WIZ/sch_16" BEL "delay_WIZ/sch_17" BEL "delay_WIZ/sch_18" BEL
+        "delay_WIZ/sch_19" BEL "delay_WIZ/sch_20" BEL "delay_WIZ/sch_21" BEL
+        "delay_WIZ/sch_22" BEL "delay_WIZ/sch_23" BEL "delay_WIZ/sch_24" BEL
+        "delay_WIZ/sch_25" BEL "delay_WIZ/sch_26" BEL "delay_WIZ/sch_27" BEL
+        "delay_WIZ/sch_28" BEL "delay_WIZ/sch_29" BEL "delay_WIZ/sch_30" BEL
+        "delay_WIZ/sch_31" BEL "sync_t5min/sch_31" BEL "sync_t5min/sch_30" BEL
+        "sync_t5min/sch_29" BEL "sync_t5min/sch_28" BEL "sync_t5min/sch_27"
+        BEL "sync_t5min/sch_26" BEL "sync_t5min/sch_25" BEL
+        "sync_t5min/sch_24" BEL "sync_t5min/sch_23" BEL "sync_t5min/sch_22"
+        BEL "sync_t5min/sch_21" BEL "sync_t5min/sch_20" BEL
+        "sync_t5min/sch_19" BEL "sync_t5min/sch_18" BEL "sync_t5min/sch_17"
+        BEL "sync_t5min/sch_16" BEL "sync_t5min/sch_15" BEL
+        "sync_t5min/sch_14" BEL "sync_t5min/sch_13" BEL "sync_t5min/sch_12"
+        BEL "sync_t5min/sch_11" BEL "sync_t5min/sch_10" BEL "sync_t5min/sch_9"
+        BEL "sync_t5min/sch_8" BEL "sync_t5min/sch_7" BEL "sync_t5min/sch_6"
+        BEL "sync_t5min/sch_5" BEL "sync_t5min/sch_4" BEL "sync_t5min/sch_3"
+        BEL "sync_t5min/sch_2" BEL "sync_t5min/sch_1" BEL "sync_t5min/sch_0"
+        BEL "sync_t5min/front_1us_2" BEL "sync_t5min/front_1us_1" BEL
+        "sync_t5min/front_1us_0" BEL "sync_t5min/flag_t5min" BEL
+        "spi_upr1/r_w" BEL "spi_upr1/data_out_15" BEL "spi_upr1/data_out_14"
+        BEL "spi_upr1/data_out_13" BEL "spi_upr1/data_out_12" BEL
+        "spi_upr1/data_out_11" BEL "spi_upr1/data_out_10" BEL
+        "spi_upr1/data_out_9" BEL "spi_upr1/data_out_8" BEL
+        "spi_upr1/data_out_7" BEL "spi_upr1/data_out_6" BEL
+        "spi_upr1/data_out_5" BEL "spi_upr1/data_out_4" BEL
+        "spi_upr1/data_out_3" BEL "spi_upr1/data_out_2" BEL
+        "spi_upr1/data_out_1" BEL "spi_upr1/data_out_0" BEL
+        "spi_upr1/data_in_15" BEL "spi_upr1/data_in_14" BEL
+        "spi_upr1/data_in_13" BEL "spi_upr1/data_in_12" BEL
+        "spi_upr1/data_in_11" BEL "spi_upr1/data_in_10" BEL
+        "spi_upr1/data_in_9" BEL "spi_upr1/data_in_8" BEL "spi_upr1/data_in_7"
+        BEL "spi_upr1/data_in_6" BEL "spi_upr1/data_in_5" BEL
+        "spi_upr1/data_in_4" BEL "spi_upr1/data_in_3" BEL "spi_upr1/data_in_2"
+        BEL "spi_upr1/data_in_1" BEL "spi_upr1/data_in_0" BEL
+        "spi_upr1/flag_1" BEL "spi_upr1/flag_0" BEL "spi_upr1/sch_7" BEL
+        "spi_upr1/sch_6" BEL "spi_upr1/sch_5" BEL "spi_upr1/sch_4" BEL
+        "spi_upr1/sch_3" BEL "spi_upr1/sch_2" BEL "spi_upr1/sch_1" BEL
+        "spi_upr1/sch_0" BEL "spi_upr1/front_cs_spi_3" BEL
+        "spi_upr1/front_cs_spi_2" BEL "spi_upr1/front_cs_spi_1" BEL
+        "spi_upr1/front_cs_spi_0" BEL "spi_upr1/front_clk_spi_2" BEL
+        "spi_upr1/front_clk_spi_1" BEL "spi_upr1/front_clk_spi_0" BEL
+        "spi_test/flag_FSM_FFd1" BEL "spi_test/r_w" BEL "spi_test/data_in_7"
+        BEL "spi_test/data_in_6" BEL "spi_test/data_in_5" BEL
+        "spi_test/data_in_4" BEL "spi_test/data_in_3" BEL "spi_test/data_in_2"
+        BEL "spi_test/data_in_1" BEL "spi_test/data_in_0" BEL
+        "spi_test/reg_out_32" BEL "spi_test/reg_out_31" BEL
+        "spi_test/reg_out_30" BEL "spi_test/reg_out_29" BEL
+        "spi_test/reg_out_28" BEL "spi_test/reg_out_27" BEL
+        "spi_test/reg_out_26" BEL "spi_test/reg_out_25" BEL
+        "spi_test/reg_out_24" BEL "spi_test/reg_out_23" BEL
+        "spi_test/reg_out_22" BEL "spi_test/reg_out_21" BEL
+        "spi_test/reg_out_20" BEL "spi_test/reg_out_19" BEL
+        "spi_test/reg_out_18" BEL "spi_test/reg_out_17" BEL
+        "spi_test/reg_out_16" BEL "spi_test/reg_out_15" BEL
+        "spi_test/reg_out_14" BEL "spi_test/reg_out_13" BEL
+        "spi_test/reg_out_12" BEL "spi_test/reg_out_11" BEL
+        "spi_test/reg_out_10" BEL "spi_test/reg_out_9" BEL
+        "spi_test/reg_out_8" BEL "spi_test/reg_out_7" BEL "spi_test/reg_out_6"
+        BEL "spi_test/reg_out_5" BEL "spi_test/reg_out_4" BEL
+        "spi_test/reg_out_3" BEL "spi_test/reg_out_2" BEL "spi_test/reg_out_1"
+        BEL "spi_test/reg_out_0" BEL "spi_test/sch_7" BEL "spi_test/sch_6" BEL
+        "spi_test/sch_5" BEL "spi_test/sch_4" BEL "spi_test/sch_3" BEL
+        "spi_test/sch_2" BEL "spi_test/sch_1" BEL "spi_test/sch_0" BEL
+        "spi_test/front_clk_spi_3" BEL "spi_TNO/data_out_31" BEL
+        "spi_TNO/data_out_30" BEL "spi_TNO/data_out_29" BEL
+        "spi_TNO/data_out_28" BEL "spi_TNO/data_out_27" BEL
+        "spi_TNO/data_out_26" BEL "spi_TNO/data_out_25" BEL
+        "spi_TNO/data_out_24" BEL "spi_TNO/data_out_23" BEL
+        "spi_TNO/data_out_22" BEL "spi_TNO/data_out_21" BEL
+        "spi_TNO/data_out_20" BEL "spi_TNO/data_out_19" BEL
+        "spi_TNO/data_out_18" BEL "spi_TNO/data_out_17" BEL
+        "spi_TNO/data_out_16" BEL "spi_TNO/data_out_15" BEL
+        "spi_TNO/data_out_14" BEL "spi_TNO/data_out_13" BEL
+        "spi_TNO/data_out_12" BEL "spi_TNO/data_out_11" BEL
+        "spi_TNO/data_out_10" BEL "spi_TNO/data_out_9" BEL
+        "spi_TNO/data_out_8" BEL "spi_TNO/data_out_7" BEL "spi_TNO/data_out_6"
+        BEL "spi_TNO/data_out_5" BEL "spi_TNO/data_out_4" BEL
+        "spi_TNO/data_out_3" BEL "spi_TNO/data_out_2" BEL "spi_TNO/data_out_1"
+        BEL "spi_TNO/data_out_0" BEL "spi_TNO/data_in_31" BEL
+        "spi_TNO/data_in_30" BEL "spi_TNO/data_in_29" BEL "spi_TNO/data_in_28"
+        BEL "spi_TNO/data_in_27" BEL "spi_TNO/data_in_26" BEL
+        "spi_TNO/data_in_25" BEL "spi_TNO/data_in_24" BEL "spi_TNO/data_in_23"
+        BEL "spi_TNO/data_in_22" BEL "spi_TNO/data_in_21" BEL
+        "spi_TNO/data_in_20" BEL "spi_TNO/data_in_19" BEL "spi_TNO/data_in_18"
+        BEL "spi_TNO/data_in_17" BEL "spi_TNO/data_in_16" BEL
+        "spi_TNO/data_in_15" BEL "spi_TNO/data_in_14" BEL "spi_TNO/data_in_13"
+        BEL "spi_TNO/data_in_12" BEL "spi_TNO/data_in_11" BEL
+        "spi_TNO/data_in_10" BEL "spi_TNO/data_in_9" BEL "spi_TNO/data_in_8"
+        BEL "spi_TNO/data_in_7" BEL "spi_TNO/data_in_6" BEL
+        "spi_TNO/data_in_5" BEL "spi_TNO/data_in_4" BEL "spi_TNO/data_in_3"
+        BEL "spi_TNO/data_in_2" BEL "spi_TNO/data_in_1" BEL
+        "spi_TNO/data_in_0" BEL "spi_TNO/r_w" BEL "spi_TNO/flag_1" BEL
+        "spi_TNO/flag_0" BEL "spi_TNO/sch_7" BEL "spi_TNO/sch_6" BEL
+        "spi_TNO/sch_5" BEL "spi_TNO/sch_4" BEL "spi_TNO/sch_3" BEL
+        "spi_TNO/sch_2" BEL "spi_TNO/sch_1" BEL "spi_TNO/sch_0" BEL
+        "spi_TNC/data_out_31" BEL "spi_TNC/data_out_30" BEL
+        "spi_TNC/data_out_29" BEL "spi_TNC/data_out_28" BEL
+        "spi_TNC/data_out_27" BEL "spi_TNC/data_out_26" BEL
+        "spi_TNC/data_out_25" BEL "spi_TNC/data_out_24" BEL
+        "spi_TNC/data_out_23" BEL "spi_TNC/data_out_22" BEL
+        "spi_TNC/data_out_21" BEL "spi_TNC/data_out_20" BEL
+        "spi_TNC/data_out_19" BEL "spi_TNC/data_out_18" BEL
+        "spi_TNC/data_out_17" BEL "spi_TNC/data_out_16" BEL
+        "spi_TNC/data_out_15" BEL "spi_TNC/data_out_14" BEL
+        "spi_TNC/data_out_13" BEL "spi_TNC/data_out_12" BEL
+        "spi_TNC/data_out_11" BEL "spi_TNC/data_out_10" BEL
+        "spi_TNC/data_out_9" BEL "spi_TNC/data_out_8" BEL "spi_TNC/data_out_7"
+        BEL "spi_TNC/data_out_6" BEL "spi_TNC/data_out_5" BEL
+        "spi_TNC/data_out_4" BEL "spi_TNC/data_out_3" BEL "spi_TNC/data_out_2"
+        BEL "spi_TNC/data_out_1" BEL "spi_TNC/data_out_0" BEL
+        "spi_TNC/data_in_31" BEL "spi_TNC/data_in_30" BEL "spi_TNC/data_in_29"
+        BEL "spi_TNC/data_in_28" BEL "spi_TNC/data_in_27" BEL
+        "spi_TNC/data_in_26" BEL "spi_TNC/data_in_25" BEL "spi_TNC/data_in_24"
+        BEL "spi_TNC/data_in_23" BEL "spi_TNC/data_in_22" BEL
+        "spi_TNC/data_in_21" BEL "spi_TNC/data_in_20" BEL "spi_TNC/data_in_19"
+        BEL "spi_TNC/data_in_18" BEL "spi_TNC/data_in_17" BEL
+        "spi_TNC/data_in_16" BEL "spi_TNC/data_in_15" BEL "spi_TNC/data_in_14"
+        BEL "spi_TNC/data_in_13" BEL "spi_TNC/data_in_12" BEL
+        "spi_TNC/data_in_11" BEL "spi_TNC/data_in_10" BEL "spi_TNC/data_in_9"
+        BEL "spi_TNC/data_in_8" BEL "spi_TNC/data_in_7" BEL
+        "spi_TNC/data_in_6" BEL "spi_TNC/data_in_5" BEL "spi_TNC/data_in_4"
+        BEL "spi_TNC/data_in_3" BEL "spi_TNC/data_in_2" BEL
+        "spi_TNC/data_in_1" BEL "spi_TNC/data_in_0" BEL "spi_TNC/r_w" BEL
+        "spi_TNC/flag_1" BEL "spi_TNC/flag_0" BEL "spi_TNC/sch_7" BEL
+        "spi_TNC/sch_6" BEL "spi_TNC/sch_5" BEL "spi_TNC/sch_4" BEL
+        "spi_TNC/sch_3" BEL "spi_TNC/sch_2" BEL "spi_TNC/sch_1" BEL
+        "spi_TNC/sch_0" BEL "spi_TOBM/data_out_31" BEL "spi_TOBM/data_out_30"
+        BEL "spi_TOBM/data_out_29" BEL "spi_TOBM/data_out_28" BEL
+        "spi_TOBM/data_out_27" BEL "spi_TOBM/data_out_26" BEL
+        "spi_TOBM/data_out_25" BEL "spi_TOBM/data_out_24" BEL
+        "spi_TOBM/data_out_23" BEL "spi_TOBM/data_out_22" BEL
+        "spi_TOBM/data_out_21" BEL "spi_TOBM/data_out_20" BEL
+        "spi_TOBM/data_out_19" BEL "spi_TOBM/data_out_18" BEL
+        "spi_TOBM/data_out_17" BEL "spi_TOBM/data_out_16" BEL
+        "spi_TOBM/data_out_15" BEL "spi_TOBM/data_out_14" BEL
+        "spi_TOBM/data_out_13" BEL "spi_TOBM/data_out_12" BEL
+        "spi_TOBM/data_out_11" BEL "spi_TOBM/data_out_10" BEL
+        "spi_TOBM/data_out_9" BEL "spi_TOBM/data_out_8" BEL
+        "spi_TOBM/data_out_7" BEL "spi_TOBM/data_out_6" BEL
+        "spi_TOBM/data_out_5" BEL "spi_TOBM/data_out_4" BEL
+        "spi_TOBM/data_out_3" BEL "spi_TOBM/data_out_2" BEL
+        "spi_TOBM/data_out_1" BEL "spi_TOBM/data_out_0" BEL
+        "spi_TOBM/data_in_31" BEL "spi_TOBM/data_in_30" BEL
+        "spi_TOBM/data_in_29" BEL "spi_TOBM/data_in_28" BEL
+        "spi_TOBM/data_in_27" BEL "spi_TOBM/data_in_26" BEL
+        "spi_TOBM/data_in_25" BEL "spi_TOBM/data_in_24" BEL
+        "spi_TOBM/data_in_23" BEL "spi_TOBM/data_in_22" BEL
+        "spi_TOBM/data_in_21" BEL "spi_TOBM/data_in_20" BEL
+        "spi_TOBM/data_in_19" BEL "spi_TOBM/data_in_18" BEL
+        "spi_TOBM/data_in_17" BEL "spi_TOBM/data_in_16" BEL
+        "spi_TOBM/data_in_15" BEL "spi_TOBM/data_in_14" BEL
+        "spi_TOBM/data_in_13" BEL "spi_TOBM/data_in_12" BEL
+        "spi_TOBM/data_in_11" BEL "spi_TOBM/data_in_10" BEL
+        "spi_TOBM/data_in_9" BEL "spi_TOBM/data_in_8" BEL "spi_TOBM/data_in_7"
+        BEL "spi_TOBM/data_in_6" BEL "spi_TOBM/data_in_5" BEL
+        "spi_TOBM/data_in_4" BEL "spi_TOBM/data_in_3" BEL "spi_TOBM/data_in_2"
+        BEL "spi_TOBM/data_in_1" BEL "spi_TOBM/data_in_0" BEL "spi_TOBM/r_w"
+        BEL "spi_TOBM/flag_1" BEL "spi_TOBM/flag_0" BEL "spi_TOBM/sch_7" BEL
+        "spi_TOBM/sch_6" BEL "spi_TOBM/sch_5" BEL "spi_TOBM/sch_4" BEL
+        "spi_TOBM/sch_3" BEL "spi_TOBM/sch_2" BEL "spi_TOBM/sch_1" BEL
+        "spi_TOBM/sch_0" BEL "spi_TNI/data_out_31" BEL "spi_TNI/data_out_30"
+        BEL "spi_TNI/data_out_29" BEL "spi_TNI/data_out_28" BEL
+        "spi_TNI/data_out_27" BEL "spi_TNI/data_out_26" BEL
+        "spi_TNI/data_out_25" BEL "spi_TNI/data_out_24" BEL
+        "spi_TNI/data_out_23" BEL "spi_TNI/data_out_22" BEL
+        "spi_TNI/data_out_21" BEL "spi_TNI/data_out_20" BEL
+        "spi_TNI/data_out_19" BEL "spi_TNI/data_out_18" BEL
+        "spi_TNI/data_out_17" BEL "spi_TNI/data_out_16" BEL
+        "spi_TNI/data_out_15" BEL "spi_TNI/data_out_14" BEL
+        "spi_TNI/data_out_13" BEL "spi_TNI/data_out_12" BEL
+        "spi_TNI/data_out_11" BEL "spi_TNI/data_out_10" BEL
+        "spi_TNI/data_out_9" BEL "spi_TNI/data_out_8" BEL "spi_TNI/data_out_7"
+        BEL "spi_TNI/data_out_6" BEL "spi_TNI/data_out_5" BEL
+        "spi_TNI/data_out_4" BEL "spi_TNI/data_out_3" BEL "spi_TNI/data_out_2"
+        BEL "spi_TNI/data_out_1" BEL "spi_TNI/data_out_0" BEL
+        "spi_TNI/data_in_31" BEL "spi_TNI/data_in_30" BEL "spi_TNI/data_in_29"
+        BEL "spi_TNI/data_in_28" BEL "spi_TNI/data_in_27" BEL
+        "spi_TNI/data_in_26" BEL "spi_TNI/data_in_25" BEL "spi_TNI/data_in_24"
+        BEL "spi_TNI/data_in_23" BEL "spi_TNI/data_in_22" BEL
+        "spi_TNI/data_in_21" BEL "spi_TNI/data_in_20" BEL "spi_TNI/data_in_19"
+        BEL "spi_TNI/data_in_18" BEL "spi_TNI/data_in_17" BEL
+        "spi_TNI/data_in_16" BEL "spi_TNI/data_in_15" BEL "spi_TNI/data_in_14"
+        BEL "spi_TNI/data_in_13" BEL "spi_TNI/data_in_12" BEL
+        "spi_TNI/data_in_11" BEL "spi_TNI/data_in_10" BEL "spi_TNI/data_in_9"
+        BEL "spi_TNI/data_in_8" BEL "spi_TNI/data_in_7" BEL
+        "spi_TNI/data_in_6" BEL "spi_TNI/data_in_5" BEL "spi_TNI/data_in_4"
+        BEL "spi_TNI/data_in_3" BEL "spi_TNI/data_in_2" BEL
+        "spi_TNI/data_in_1" BEL "spi_TNI/data_in_0" BEL "spi_TNI/r_w" BEL
+        "spi_TNI/flag_1" BEL "spi_TNI/flag_0" BEL "spi_TNI/sch_7" BEL
+        "spi_TNI/sch_6" BEL "spi_TNI/sch_5" BEL "spi_TNI/sch_4" BEL
+        "spi_TNI/sch_3" BEL "spi_TNI/sch_2" BEL "spi_TNI/sch_1" BEL
+        "spi_TNI/sch_0" BEL "spi_TKI/data_out_31" BEL "spi_TKI/data_out_30"
+        BEL "spi_TKI/data_out_29" BEL "spi_TKI/data_out_28" BEL
+        "spi_TKI/data_out_27" BEL "spi_TKI/data_out_26" BEL
+        "spi_TKI/data_out_25" BEL "spi_TKI/data_out_24" BEL
+        "spi_TKI/data_out_23" BEL "spi_TKI/data_out_22" BEL
+        "spi_TKI/data_out_21" BEL "spi_TKI/data_out_20" BEL
+        "spi_TKI/data_out_19" BEL "spi_TKI/data_out_18" BEL
+        "spi_TKI/data_out_17" BEL "spi_TKI/data_out_16" BEL
+        "spi_TKI/data_out_15" BEL "spi_TKI/data_out_14" BEL
+        "spi_TKI/data_out_13" BEL "spi_TKI/data_out_12" BEL
+        "spi_TKI/data_out_11" BEL "spi_TKI/data_out_10" BEL
+        "spi_TKI/data_out_9" BEL "spi_TKI/data_out_8" BEL "spi_TKI/data_out_7"
+        BEL "spi_TKI/data_out_6" BEL "spi_TKI/data_out_5" BEL
+        "spi_TKI/data_out_4" BEL "spi_TKI/data_out_3" BEL "spi_TKI/data_out_2"
+        BEL "spi_TKI/data_out_1" BEL "spi_TKI/data_out_0" BEL
+        "spi_TKI/data_in_31" BEL "spi_TKI/data_in_30" BEL "spi_TKI/data_in_29"
+        BEL "spi_TKI/data_in_28" BEL "spi_TKI/data_in_27" BEL
+        "spi_TKI/data_in_26" BEL "spi_TKI/data_in_25" BEL "spi_TKI/data_in_24"
+        BEL "spi_TKI/data_in_23" BEL "spi_TKI/data_in_22" BEL
+        "spi_TKI/data_in_21" BEL "spi_TKI/data_in_20" BEL "spi_TKI/data_in_19"
+        BEL "spi_TKI/data_in_18" BEL "spi_TKI/data_in_17" BEL
+        "spi_TKI/data_in_16" BEL "spi_TKI/data_in_15" BEL "spi_TKI/data_in_14"
+        BEL "spi_TKI/data_in_13" BEL "spi_TKI/data_in_12" BEL
+        "spi_TKI/data_in_11" BEL "spi_TKI/data_in_10" BEL "spi_TKI/data_in_9"
+        BEL "spi_TKI/data_in_8" BEL "spi_TKI/data_in_7" BEL
+        "spi_TKI/data_in_6" BEL "spi_TKI/data_in_5" BEL "spi_TKI/data_in_4"
+        BEL "spi_TKI/data_in_3" BEL "spi_TKI/data_in_2" BEL
+        "spi_TKI/data_in_1" BEL "spi_TKI/data_in_0" BEL "spi_TKI/r_w" BEL
+        "spi_TKI/flag_1" BEL "spi_TKI/flag_0" BEL "spi_TKI/sch_7" BEL
+        "spi_TKI/sch_6" BEL "spi_TKI/sch_5" BEL "spi_TKI/sch_4" BEL
+        "spi_TKI/sch_3" BEL "spi_TKI/sch_2" BEL "spi_TKI/sch_1" BEL
+        "spi_TKI/sch_0" BEL "spi_TNP/data_out_31" BEL "spi_TNP/data_out_30"
+        BEL "spi_TNP/data_out_29" BEL "spi_TNP/data_out_28" BEL
+        "spi_TNP/data_out_27" BEL "spi_TNP/data_out_26" BEL
+        "spi_TNP/data_out_25" BEL "spi_TNP/data_out_24" BEL
+        "spi_TNP/data_out_23" BEL "spi_TNP/data_out_22" BEL
+        "spi_TNP/data_out_21" BEL "spi_TNP/data_out_20" BEL
+        "spi_TNP/data_out_19" BEL "spi_TNP/data_out_18" BEL
+        "spi_TNP/data_out_17" BEL "spi_TNP/data_out_16" BEL
+        "spi_TNP/data_out_15" BEL "spi_TNP/data_out_14" BEL
+        "spi_TNP/data_out_13" BEL "spi_TNP/data_out_12" BEL
+        "spi_TNP/data_out_11" BEL "spi_TNP/data_out_10" BEL
+        "spi_TNP/data_out_9" BEL "spi_TNP/data_out_8" BEL "spi_TNP/data_out_7"
+        BEL "spi_TNP/data_out_6" BEL "spi_TNP/data_out_5" BEL
+        "spi_TNP/data_out_4" BEL "spi_TNP/data_out_3" BEL "spi_TNP/data_out_2"
+        BEL "spi_TNP/data_out_1" BEL "spi_TNP/data_out_0" BEL
+        "spi_TNP/data_in_31" BEL "spi_TNP/data_in_30" BEL "spi_TNP/data_in_29"
+        BEL "spi_TNP/data_in_28" BEL "spi_TNP/data_in_27" BEL
+        "spi_TNP/data_in_26" BEL "spi_TNP/data_in_25" BEL "spi_TNP/data_in_24"
+        BEL "spi_TNP/data_in_23" BEL "spi_TNP/data_in_22" BEL
+        "spi_TNP/data_in_21" BEL "spi_TNP/data_in_20" BEL "spi_TNP/data_in_19"
+        BEL "spi_TNP/data_in_18" BEL "spi_TNP/data_in_17" BEL
+        "spi_TNP/data_in_16" BEL "spi_TNP/data_in_15" BEL "spi_TNP/data_in_14"
+        BEL "spi_TNP/data_in_13" BEL "spi_TNP/data_in_12" BEL
+        "spi_TNP/data_in_11" BEL "spi_TNP/data_in_10" BEL "spi_TNP/data_in_9"
+        BEL "spi_TNP/data_in_8" BEL "spi_TNP/data_in_7" BEL
+        "spi_TNP/data_in_6" BEL "spi_TNP/data_in_5" BEL "spi_TNP/data_in_4"
+        BEL "spi_TNP/data_in_3" BEL "spi_TNP/data_in_2" BEL
+        "spi_TNP/data_in_1" BEL "spi_TNP/data_in_0" BEL "spi_TNP/r_w" BEL
+        "spi_TNP/flag_1" BEL "spi_TNP/flag_0" BEL "spi_TNP/sch_7" BEL
+        "spi_TNP/sch_6" BEL "spi_TNP/sch_5" BEL "spi_TNP/sch_4" BEL
+        "spi_TNP/sch_3" BEL "spi_TNP/sch_2" BEL "spi_TNP/sch_1" BEL
+        "spi_TNP/sch_0" BEL "spi_TKP/data_out_31" BEL "spi_TKP/data_out_30"
+        BEL "spi_TKP/data_out_29" BEL "spi_TKP/data_out_28" BEL
+        "spi_TKP/data_out_27" BEL "spi_TKP/data_out_26" BEL
+        "spi_TKP/data_out_25" BEL "spi_TKP/data_out_24" BEL
+        "spi_TKP/data_out_23" BEL "spi_TKP/data_out_22" BEL
+        "spi_TKP/data_out_21" BEL "spi_TKP/data_out_20" BEL
+        "spi_TKP/data_out_19" BEL "spi_TKP/data_out_18" BEL
+        "spi_TKP/data_out_17" BEL "spi_TKP/data_out_16" BEL
+        "spi_TKP/data_out_15" BEL "spi_TKP/data_out_14" BEL
+        "spi_TKP/data_out_13" BEL "spi_TKP/data_out_12" BEL
+        "spi_TKP/data_out_11" BEL "spi_TKP/data_out_10" BEL
+        "spi_TKP/data_out_9" BEL "spi_TKP/data_out_8" BEL "spi_TKP/data_out_7"
+        BEL "spi_TKP/data_out_6" BEL "spi_TKP/data_out_5" BEL
+        "spi_TKP/data_out_4" BEL "spi_TKP/data_out_3" BEL "spi_TKP/data_out_2"
+        BEL "spi_TKP/data_out_1" BEL "spi_TKP/data_out_0" BEL
+        "spi_TKP/data_in_31" BEL "spi_TKP/data_in_30" BEL "spi_TKP/data_in_29"
+        BEL "spi_TKP/data_in_28" BEL "spi_TKP/data_in_27" BEL
+        "spi_TKP/data_in_26" BEL "spi_TKP/data_in_25" BEL "spi_TKP/data_in_24"
+        BEL "spi_TKP/data_in_23" BEL "spi_TKP/data_in_22" BEL
+        "spi_TKP/data_in_21" BEL "spi_TKP/data_in_20" BEL "spi_TKP/data_in_19"
+        BEL "spi_TKP/data_in_18" BEL "spi_TKP/data_in_17" BEL
+        "spi_TKP/data_in_16" BEL "spi_TKP/data_in_15" BEL "spi_TKP/data_in_14"
+        BEL "spi_TKP/data_in_13" BEL "spi_TKP/data_in_12" BEL
+        "spi_TKP/data_in_11" BEL "spi_TKP/data_in_10" BEL "spi_TKP/data_in_9"
+        BEL "spi_TKP/data_in_8" BEL "spi_TKP/data_in_7" BEL
+        "spi_TKP/data_in_6" BEL "spi_TKP/data_in_5" BEL "spi_TKP/data_in_4"
+        BEL "spi_TKP/data_in_3" BEL "spi_TKP/data_in_2" BEL
+        "spi_TKP/data_in_1" BEL "spi_TKP/data_in_0" BEL "spi_TKP/r_w" BEL
+        "spi_TKP/flag_1" BEL "spi_TKP/flag_0" BEL "spi_TKP/sch_7" BEL
+        "spi_TKP/sch_6" BEL "spi_TKP/sch_5" BEL "spi_TKP/sch_4" BEL
+        "spi_TKP/sch_3" BEL "spi_TKP/sch_2" BEL "spi_TKP/sch_1" BEL
+        "spi_TKP/sch_0" BEL "spi_CMND/data_out_31" BEL "spi_CMND/data_out_30"
+        BEL "spi_CMND/data_out_29" BEL "spi_CMND/data_out_28" BEL
+        "spi_CMND/data_out_27" BEL "spi_CMND/data_out_26" BEL
+        "spi_CMND/data_out_25" BEL "spi_CMND/data_out_24" BEL
+        "spi_CMND/data_out_23" BEL "spi_CMND/data_out_22" BEL
+        "spi_CMND/data_out_21" BEL "spi_CMND/data_out_20" BEL
+        "spi_CMND/data_out_19" BEL "spi_CMND/data_out_18" BEL
+        "spi_CMND/data_out_17" BEL "spi_CMND/data_out_16" BEL
+        "spi_CMND/data_out_15" BEL "spi_CMND/data_out_14" BEL
+        "spi_CMND/data_out_13" BEL "spi_CMND/data_out_12" BEL
+        "spi_CMND/data_out_11" BEL "spi_CMND/data_out_10" BEL
+        "spi_CMND/data_out_9" BEL "spi_CMND/data_out_8" BEL
+        "spi_CMND/data_in_31" BEL "spi_CMND/data_in_30" BEL
+        "spi_CMND/data_in_29" BEL "spi_CMND/data_in_28" BEL
+        "spi_CMND/data_in_27" BEL "spi_CMND/data_in_26" BEL
+        "spi_CMND/data_in_25" BEL "spi_CMND/data_in_24" BEL
+        "spi_CMND/data_in_23" BEL "spi_CMND/data_in_22" BEL
+        "spi_CMND/data_in_21" BEL "spi_CMND/data_in_20" BEL
+        "spi_CMND/data_in_19" BEL "spi_CMND/data_in_18" BEL
+        "spi_CMND/data_in_17" BEL "spi_CMND/data_in_16" BEL
+        "spi_CMND/data_in_15" BEL "spi_CMND/data_in_14" BEL
+        "spi_CMND/data_in_13" BEL "spi_CMND/data_in_12" BEL
+        "spi_CMND/data_in_11" BEL "spi_CMND/data_in_10" BEL
+        "spi_CMND/data_in_9" BEL "spi_CMND/data_in_8" BEL "spi_CMND/data_in_7"
+        BEL "spi_CMND/data_in_6" BEL "spi_CMND/data_in_5" BEL
+        "spi_CMND/data_in_4" BEL "spi_CMND/data_in_3" BEL "spi_CMND/data_in_2"
+        BEL "spi_CMND/data_in_1" BEL "spi_CMND/data_in_0" BEL "spi_CMND/r_w"
+        BEL "spi_CMND/flag_1" BEL "spi_CMND/flag_0" BEL "spi_CMND/sch_7" BEL
+        "spi_CMND/sch_6" BEL "spi_CMND/sch_5" BEL "spi_CMND/sch_4" BEL
+        "spi_CMND/sch_3" BEL "spi_CMND/sch_2" BEL "spi_CMND/sch_1" BEL
+        "spi_CMND/sch_0" BEL "reset1/Mshreg_a_0_0/SRLC16E" BEL
+        "reset1/a<0>.SLICEM_GMC15_BLACKBOX" BEL "reset1/Mshreg_a_0_1/SRL16E"
+        BEL "reset1/a_0" BEL "OUT_REZERV_KONTR_3_3V3" BEL
+        "OUT_REZERV_KONTR_3_3V3_OBUF_BUFG.GCLKMUX" BEL
+        "OUT_REZERV_KONTR_3_3V3_OBUF_BUFG" PIN "dcm1/DCM_SP_INST_pins<3>";
+TIMEGRP MF1US_controlCLK/sch64_01 = BEL "MF1US_controlCLK/sch64_5" BEL
+        "MF1US_controlCLK/sch64_4" BEL "MF1US_controlCLK/sch64_3" BEL
+        "MF1US_controlCLK/sch64_2" BEL "MF1US_controlCLK/sch64_1" BEL
+        "MF1US_controlCLK/sch64_0" BEL "MFI/delay_tkp_15" BEL
+        "MFI/delay_tkp_14" BEL "MFI/delay_tkp_13" BEL "MFI/delay_tkp_12" BEL
+        "MFI/delay_tkp_11" BEL "MFI/delay_tkp_10" BEL "MFI/delay_tkp_9" BEL
+        "MFI/delay_tkp_8" BEL "MFI/delay_tkp_7" BEL "MFI/delay_tkp_6" BEL
+        "MFI/delay_tkp_5" BEL "MFI/delay_tkp_4" BEL "MFI/delay_tkp_3" BEL
+        "MFI/delay_tkp_2" BEL "MFI/delay_tkp_1" BEL "MFI/delay_tkp_0" BEL
+        "MFI/delay_tnp_15" BEL "MFI/delay_tnp_14" BEL "MFI/delay_tnp_13" BEL
+        "MFI/delay_tnp_12" BEL "MFI/delay_tnp_11" BEL "MFI/delay_tnp_10" BEL
+        "MFI/delay_tnp_9" BEL "MFI/delay_tnp_8" BEL "MFI/delay_tnp_7" BEL
+        "MFI/delay_tnp_6" BEL "MFI/delay_tnp_5" BEL "MFI/delay_tnp_4" BEL
+        "MFI/delay_tnp_3" BEL "MFI/delay_tnp_2" BEL "MFI/delay_tnp_1" BEL
+        "MFI/delay_tnp_0" BEL "MFI/delay_tki_15" BEL "MFI/delay_tki_14" BEL
+        "MFI/delay_tki_13" BEL "MFI/delay_tki_12" BEL "MFI/delay_tki_11" BEL
+        "MFI/delay_tki_10" BEL "MFI/delay_tki_9" BEL "MFI/delay_tki_8" BEL
+        "MFI/delay_tki_7" BEL "MFI/delay_tki_6" BEL "MFI/delay_tki_5" BEL
+        "MFI/delay_tki_4" BEL "MFI/delay_tki_3" BEL "MFI/delay_tki_2" BEL
+        "MFI/delay_tki_1" BEL "MFI/delay_tki_0" BEL "MFI/delay_tni_15" BEL
+        "MFI/delay_tni_14" BEL "MFI/delay_tni_13" BEL "MFI/delay_tni_12" BEL
+        "MFI/delay_tni_11" BEL "MFI/delay_tni_10" BEL "MFI/delay_tni_9" BEL
+        "MFI/delay_tni_8" BEL "MFI/delay_tni_7" BEL "MFI/delay_tni_6" BEL
+        "MFI/delay_tni_5" BEL "MFI/delay_tni_4" BEL "MFI/delay_tni_3" BEL
+        "MFI/delay_tni_2" BEL "MFI/delay_tni_1" BEL "MFI/delay_tni_0" BEL
+        "MFI/delay_tobm_15" BEL "MFI/delay_tobm_14" BEL "MFI/delay_tobm_13"
+        BEL "MFI/delay_tobm_12" BEL "MFI/delay_tobm_11" BEL
+        "MFI/delay_tobm_10" BEL "MFI/delay_tobm_9" BEL "MFI/delay_tobm_8" BEL
+        "MFI/delay_tobm_7" BEL "MFI/delay_tobm_6" BEL "MFI/delay_tobm_5" BEL
+        "MFI/delay_tobm_4" BEL "MFI/delay_tobm_3" BEL "MFI/delay_tobm_2" BEL
+        "MFI/delay_tobm_1" BEL "MFI/delay_tobm_0" BEL "MFI/delay_tnc_15" BEL
+        "MFI/delay_tnc_14" BEL "MFI/delay_tnc_13" BEL "MFI/delay_tnc_12" BEL
+        "MFI/delay_tnc_11" BEL "MFI/delay_tnc_10" BEL "MFI/delay_tnc_9" BEL
+        "MFI/delay_tnc_8" BEL "MFI/delay_tnc_7" BEL "MFI/delay_tnc_6" BEL
+        "MFI/delay_tnc_5" BEL "MFI/delay_tnc_4" BEL "MFI/delay_tnc_3" BEL
+        "MFI/delay_tnc_2" BEL "MFI/delay_tnc_1" BEL "MFI/delay_tnc_0" BEL
+        "MFI/delay_tno_x_15" BEL "MFI/delay_tno_x_14" BEL "MFI/delay_tno_x_13"
+        BEL "MFI/delay_tno_x_12" BEL "MFI/delay_tno_x_11" BEL
+        "MFI/delay_tno_x_10" BEL "MFI/delay_tno_x_9" BEL "MFI/delay_tno_x_8"
+        BEL "MFI/delay_tno_x_7" BEL "MFI/delay_tno_x_6" BEL
+        "MFI/delay_tno_x_5" BEL "MFI/delay_tno_x_4" BEL "MFI/delay_tno_x_3"
+        BEL "MFI/delay_tno_x_2" BEL "MFI/delay_tno_x_1" BEL
+        "MFI/delay_tno_x_0" BEL "MFI/delay_tno_15" BEL "MFI/delay_tno_14" BEL
+        "MFI/delay_tno_13" BEL "MFI/delay_tno_12" BEL "MFI/delay_tno_11" BEL
+        "MFI/delay_tno_10" BEL "MFI/delay_tno_9" BEL "MFI/delay_tno_8" BEL
+        "MFI/delay_tno_7" BEL "MFI/delay_tno_6" BEL "MFI/delay_tno_5" BEL
+        "MFI/delay_tno_4" BEL "MFI/delay_tno_3" BEL "MFI/delay_tno_2" BEL
+        "MFI/delay_tno_1" BEL "MFI/delay_tno_0" BEL "MFI/sch_sync_reg_7" BEL
+        "MFI/sch_sync_reg_6" BEL "MFI/sch_sync_reg_5" BEL "MFI/sch_sync_reg_4"
+        BEL "MFI/sch_sync_reg_3" BEL "MFI/sch_sync_reg_2" BEL
+        "MFI/sch_sync_reg_1" BEL "MFI/sch_sync_reg_0" BEL
+        "MFI/time_from_start_31" BEL "MFI/time_from_start_30" BEL
+        "MFI/time_from_start_29" BEL "MFI/time_from_start_28" BEL
+        "MFI/time_from_start_27" BEL "MFI/time_from_start_26" BEL
+        "MFI/time_from_start_25" BEL "MFI/time_from_start_24" BEL
+        "MFI/time_from_start_23" BEL "MFI/time_from_start_22" BEL
+        "MFI/time_from_start_21" BEL "MFI/time_from_start_20" BEL
+        "MFI/time_from_start_19" BEL "MFI/time_from_start_18" BEL
+        "MFI/time_from_start_17" BEL "MFI/time_from_start_16" BEL
+        "MFI/time_from_start_15" BEL "MFI/time_from_start_14" BEL
+        "MFI/time_from_start_13" BEL "MFI/time_from_start_12" BEL
+        "MFI/time_from_start_11" BEL "MFI/time_from_start_10" BEL
+        "MFI/time_from_start_9" BEL "MFI/time_from_start_8" BEL
+        "MFI/time_from_start_7" BEL "MFI/time_from_start_6" BEL
+        "MFI/time_from_start_5" BEL "MFI/time_from_start_4" BEL
+        "MFI/time_from_start_3" BEL "MFI/time_from_start_2" BEL
+        "MFI/time_from_start_1" BEL "MFI/time_from_start_0" BEL "MFI/tnp_reg5"
+        BEL "MFI/tni_reg5" BEL "MFI/tki_reg6" BEL "MFI/tno_x_reg5" BEL
+        "MFI/tno_reg5" BEL "MFI/flag_RESET_time_OK" BEL "MFI/tick_TNO_3" BEL
+        "MFI/tick_TNO_2" BEL "MFI/FLAG_tobm_reg" BEL "MFI/tnp_reg6" BEL
+        "MFI/tni_reg6" BEL "MFI/tki_reg5" BEL "MFI/Interval_TI" BEL
+        "MFI/Interval_TP" BEL "MFI/tkp_reg" BEL "MFI/tki_reg" BEL
+        "MFI/tni_reg" BEL "MFI/tnp_reg" BEL "MFI/tnc_reg" BEL "MFI/tno_x_reg"
+        BEL "MFI/tobm_reg" BEL "MFI/delay_tno1_15" BEL "MFI/delay_tno1_14" BEL
+        "MFI/delay_tno1_13" BEL "MFI/delay_tno1_12" BEL "MFI/delay_tno1_11"
+        BEL "MFI/delay_tno1_10" BEL "MFI/delay_tno1_9" BEL "MFI/delay_tno1_8"
+        BEL "MFI/delay_tno1_7" BEL "MFI/delay_tno1_6" BEL "MFI/delay_tno1_5"
+        BEL "MFI/delay_tno1_4" BEL "MFI/delay_tno1_3" BEL "MFI/delay_tno1_2"
+        BEL "MFI/delay_tno1_1" BEL "MFI/delay_tno1_0" BEL "MFI/tno1_reg" BEL
+        "MFI/tno_reg" BEL "MFI/flag_reset_from_TNO" BEL "MFI/CMND_rg2_31" BEL
+        "MFI/CMND_rg2_30" BEL "MFI/CMND_rg2_29" BEL "MFI/CMND_rg2_28" BEL
+        "MFI/CMND_rg2_27" BEL "MFI/CMND_rg2_26" BEL "MFI/CMND_rg2_25" BEL
+        "MFI/CMND_rg2_24" BEL "MFI/CMND_rg2_23" BEL "MFI/CMND_rg2_22" BEL
+        "MFI/CMND_rg2_21" BEL "MFI/CMND_rg2_20" BEL "MFI/CMND_rg2_19" BEL
+        "MFI/CMND_rg2_18" BEL "MFI/CMND_rg2_17" BEL "MFI/CMND_rg2_16" BEL
+        "MFI/TKP_rg2_31" BEL "MFI/TKP_rg2_30" BEL "MFI/TKP_rg2_29" BEL
+        "MFI/TKP_rg2_28" BEL "MFI/TKP_rg2_27" BEL "MFI/TKP_rg2_26" BEL
+        "MFI/TKP_rg2_25" BEL "MFI/TKP_rg2_24" BEL "MFI/TKP_rg2_23" BEL
+        "MFI/TKP_rg2_22" BEL "MFI/TKP_rg2_21" BEL "MFI/TKP_rg2_20" BEL
+        "MFI/TKP_rg2_19" BEL "MFI/TKP_rg2_18" BEL "MFI/TKP_rg2_17" BEL
+        "MFI/TKP_rg2_16" BEL "MFI/TKP_rg2_15" BEL "MFI/TKP_rg2_14" BEL
+        "MFI/TKP_rg2_13" BEL "MFI/TKP_rg2_12" BEL "MFI/TKP_rg2_11" BEL
+        "MFI/TKP_rg2_10" BEL "MFI/TKP_rg2_9" BEL "MFI/TKP_rg2_8" BEL
+        "MFI/TKP_rg2_7" BEL "MFI/TKP_rg2_6" BEL "MFI/TKP_rg2_5" BEL
+        "MFI/TKP_rg2_4" BEL "MFI/TKP_rg2_3" BEL "MFI/TKP_rg2_2" BEL
+        "MFI/TKP_rg2_1" BEL "MFI/TKP_rg2_0" BEL "MFI/flag_RESET_time" BEL
+        "MFI/TKI_rg2_31" BEL "MFI/TKI_rg2_30" BEL "MFI/TKI_rg2_29" BEL
+        "MFI/TKI_rg2_28" BEL "MFI/TKI_rg2_27" BEL "MFI/TKI_rg2_26" BEL
+        "MFI/TKI_rg2_25" BEL "MFI/TKI_rg2_24" BEL "MFI/TKI_rg2_23" BEL
+        "MFI/TKI_rg2_22" BEL "MFI/TKI_rg2_21" BEL "MFI/TKI_rg2_20" BEL
+        "MFI/TKI_rg2_19" BEL "MFI/TKI_rg2_18" BEL "MFI/TKI_rg2_17" BEL
+        "MFI/TKI_rg2_16" BEL "MFI/TKI_rg2_15" BEL "MFI/TKI_rg2_14" BEL
+        "MFI/TKI_rg2_13" BEL "MFI/TKI_rg2_12" BEL "MFI/TKI_rg2_11" BEL
+        "MFI/TKI_rg2_10" BEL "MFI/TKI_rg2_9" BEL "MFI/TKI_rg2_8" BEL
+        "MFI/TKI_rg2_7" BEL "MFI/TKI_rg2_6" BEL "MFI/TKI_rg2_5" BEL
+        "MFI/TKI_rg2_4" BEL "MFI/TKI_rg2_3" BEL "MFI/TKI_rg2_2" BEL
+        "MFI/TKI_rg2_1" BEL "MFI/TKI_rg2_0" BEL "MFI/TNI_rg2_31" BEL
+        "MFI/TNI_rg2_30" BEL "MFI/TNI_rg2_29" BEL "MFI/TNI_rg2_28" BEL
+        "MFI/TNI_rg2_27" BEL "MFI/TNI_rg2_26" BEL "MFI/TNI_rg2_25" BEL
+        "MFI/TNI_rg2_24" BEL "MFI/TNI_rg2_23" BEL "MFI/TNI_rg2_22" BEL
+        "MFI/TNI_rg2_21" BEL "MFI/TNI_rg2_20" BEL "MFI/TNI_rg2_19" BEL
+        "MFI/TNI_rg2_18" BEL "MFI/TNI_rg2_17" BEL "MFI/TNI_rg2_16" BEL
+        "MFI/TNI_rg2_15" BEL "MFI/TNI_rg2_14" BEL "MFI/TNI_rg2_13" BEL
+        "MFI/TNI_rg2_12" BEL "MFI/TNI_rg2_11" BEL "MFI/TNI_rg2_10" BEL
+        "MFI/TNI_rg2_9" BEL "MFI/TNI_rg2_8" BEL "MFI/TNI_rg2_7" BEL
+        "MFI/TNI_rg2_6" BEL "MFI/TNI_rg2_5" BEL "MFI/TNI_rg2_4" BEL
+        "MFI/TNI_rg2_3" BEL "MFI/TNI_rg2_2" BEL "MFI/TNI_rg2_1" BEL
+        "MFI/TNI_rg2_0" BEL "MFI/TNP_rg2_31" BEL "MFI/TNP_rg2_30" BEL
+        "MFI/TNP_rg2_29" BEL "MFI/TNP_rg2_28" BEL "MFI/TNP_rg2_27" BEL
+        "MFI/TNP_rg2_26" BEL "MFI/TNP_rg2_25" BEL "MFI/TNP_rg2_24" BEL
+        "MFI/TNP_rg2_23" BEL "MFI/TNP_rg2_22" BEL "MFI/TNP_rg2_21" BEL
+        "MFI/TNP_rg2_20" BEL "MFI/TNP_rg2_19" BEL "MFI/TNP_rg2_18" BEL
+        "MFI/TNP_rg2_17" BEL "MFI/TNP_rg2_16" BEL "MFI/TNP_rg2_15" BEL
+        "MFI/TNP_rg2_14" BEL "MFI/TNP_rg2_13" BEL "MFI/TNP_rg2_12" BEL
+        "MFI/TNP_rg2_11" BEL "MFI/TNP_rg2_10" BEL "MFI/TNP_rg2_9" BEL
+        "MFI/TNP_rg2_8" BEL "MFI/TNP_rg2_7" BEL "MFI/TNP_rg2_6" BEL
+        "MFI/TNP_rg2_5" BEL "MFI/TNP_rg2_4" BEL "MFI/TNP_rg2_3" BEL
+        "MFI/TNP_rg2_2" BEL "MFI/TNP_rg2_1" BEL "MFI/TNP_rg2_0" BEL
+        "MFI/TOBM_rg2_31" BEL "MFI/TOBM_rg2_30" BEL "MFI/TOBM_rg2_29" BEL
+        "MFI/TOBM_rg2_28" BEL "MFI/TOBM_rg2_27" BEL "MFI/TOBM_rg2_26" BEL
+        "MFI/TOBM_rg2_25" BEL "MFI/TOBM_rg2_24" BEL "MFI/TOBM_rg2_23" BEL
+        "MFI/TOBM_rg2_22" BEL "MFI/TOBM_rg2_21" BEL "MFI/TOBM_rg2_20" BEL
+        "MFI/TOBM_rg2_19" BEL "MFI/TOBM_rg2_18" BEL "MFI/TOBM_rg2_17" BEL
+        "MFI/TOBM_rg2_16" BEL "MFI/TOBM_rg2_15" BEL "MFI/TOBM_rg2_14" BEL
+        "MFI/TOBM_rg2_13" BEL "MFI/TOBM_rg2_12" BEL "MFI/TOBM_rg2_11" BEL
+        "MFI/TOBM_rg2_10" BEL "MFI/TOBM_rg2_9" BEL "MFI/TOBM_rg2_8" BEL
+        "MFI/TOBM_rg2_7" BEL "MFI/TOBM_rg2_6" BEL "MFI/TOBM_rg2_5" BEL
+        "MFI/TOBM_rg2_4" BEL "MFI/TOBM_rg2_3" BEL "MFI/TOBM_rg2_2" BEL
+        "MFI/TOBM_rg2_1" BEL "MFI/TOBM_rg2_0" BEL "MFI/TNO_rg2_31" BEL
+        "MFI/TNO_rg2_30" BEL "MFI/TNO_rg2_29" BEL "MFI/TNO_rg2_28" BEL
+        "MFI/TNO_rg2_27" BEL "MFI/TNO_rg2_26" BEL "MFI/TNO_rg2_25" BEL
+        "MFI/TNO_rg2_24" BEL "MFI/TNO_rg2_23" BEL "MFI/TNO_rg2_22" BEL
+        "MFI/TNO_rg2_21" BEL "MFI/TNO_rg2_20" BEL "MFI/TNO_rg2_19" BEL
+        "MFI/TNO_rg2_18" BEL "MFI/TNO_rg2_17" BEL "MFI/TNO_rg2_16" BEL
+        "MFI/TNO_rg2_15" BEL "MFI/TNO_rg2_14" BEL "MFI/TNO_rg2_13" BEL
+        "MFI/TNO_rg2_12" BEL "MFI/TNO_rg2_11" BEL "MFI/TNO_rg2_10" BEL
+        "MFI/TNO_rg2_9" BEL "MFI/TNO_rg2_8" BEL "MFI/TNO_rg2_7" BEL
+        "MFI/TNO_rg2_6" BEL "MFI/TNO_rg2_5" BEL "MFI/TNO_rg2_4" BEL
+        "MFI/TNO_rg2_3" BEL "MFI/TNO_rg2_2" BEL "MFI/TNO_rg2_1" BEL
+        "MFI/TNO_rg2_0" BEL "MFI/TNC_rg2_31" BEL "MFI/TNC_rg2_30" BEL
+        "MFI/TNC_rg2_29" BEL "MFI/TNC_rg2_28" BEL "MFI/TNC_rg2_27" BEL
+        "MFI/TNC_rg2_26" BEL "MFI/TNC_rg2_25" BEL "MFI/TNC_rg2_24" BEL
+        "MFI/TNC_rg2_23" BEL "MFI/TNC_rg2_22" BEL "MFI/TNC_rg2_21" BEL
+        "MFI/TNC_rg2_20" BEL "MFI/TNC_rg2_19" BEL "MFI/TNC_rg2_18" BEL
+        "MFI/TNC_rg2_17" BEL "MFI/TNC_rg2_16" BEL "MFI/TNC_rg2_15" BEL
+        "MFI/TNC_rg2_14" BEL "MFI/TNC_rg2_13" BEL "MFI/TNC_rg2_12" BEL
+        "MFI/TNC_rg2_11" BEL "MFI/TNC_rg2_10" BEL "MFI/TNC_rg2_9" BEL
+        "MFI/TNC_rg2_8" BEL "MFI/TNC_rg2_7" BEL "MFI/TNC_rg2_6" BEL
+        "MFI/TNC_rg2_5" BEL "MFI/TNC_rg2_4" BEL "MFI/TNC_rg2_3" BEL
+        "MFI/TNC_rg2_2" BEL "MFI/TNC_rg2_1" BEL "MFI/TNC_rg2_0" BEL
+        "MFI/CMND_rg_31" BEL "MFI/CMND_rg_30" BEL "MFI/CMND_rg_29" BEL
+        "MFI/CMND_rg_28" BEL "MFI/CMND_rg_27" BEL "MFI/CMND_rg_26" BEL
+        "MFI/CMND_rg_25" BEL "MFI/CMND_rg_24" BEL "MFI/CMND_rg_23" BEL
+        "MFI/CMND_rg_22" BEL "MFI/CMND_rg_21" BEL "MFI/CMND_rg_20" BEL
+        "MFI/CMND_rg_19" BEL "MFI/CMND_rg_18" BEL "MFI/CMND_rg_17" BEL
+        "MFI/CMND_rg_16" BEL "MFI/CMND_rg_0" BEL "MFI/TKP_rg_31" BEL
+        "MFI/TKP_rg_30" BEL "MFI/TKP_rg_29" BEL "MFI/TKP_rg_28" BEL
+        "MFI/TKP_rg_27" BEL "MFI/TKP_rg_26" BEL "MFI/TKP_rg_25" BEL
+        "MFI/TKP_rg_24" BEL "MFI/TKP_rg_23" BEL "MFI/TKP_rg_22" BEL
+        "MFI/TKP_rg_21" BEL "MFI/TKP_rg_20" BEL "MFI/TKP_rg_19" BEL
+        "MFI/TKP_rg_18" BEL "MFI/TKP_rg_17" BEL "MFI/TKP_rg_16" BEL
+        "MFI/TKP_rg_15" BEL "MFI/TKP_rg_14" BEL "MFI/TKP_rg_13" BEL
+        "MFI/TKP_rg_12" BEL "MFI/TKP_rg_11" BEL "MFI/TKP_rg_10" BEL
+        "MFI/TKP_rg_9" BEL "MFI/TKP_rg_8" BEL "MFI/TKP_rg_7" BEL
+        "MFI/TKP_rg_6" BEL "MFI/TKP_rg_5" BEL "MFI/TKP_rg_4" BEL
+        "MFI/TKP_rg_3" BEL "MFI/TKP_rg_2" BEL "MFI/TKP_rg_1" BEL
+        "MFI/TKP_rg_0" BEL "MFI/TNP_rg_31" BEL "MFI/TNP_rg_30" BEL
+        "MFI/TNP_rg_29" BEL "MFI/TNP_rg_28" BEL "MFI/TNP_rg_27" BEL
+        "MFI/TNP_rg_26" BEL "MFI/TNP_rg_25" BEL "MFI/TNP_rg_24" BEL
+        "MFI/TNP_rg_23" BEL "MFI/TNP_rg_22" BEL "MFI/TNP_rg_21" BEL
+        "MFI/TNP_rg_20" BEL "MFI/TNP_rg_19" BEL "MFI/TNP_rg_18" BEL
+        "MFI/TNP_rg_17" BEL "MFI/TNP_rg_16" BEL "MFI/TNP_rg_15" BEL
+        "MFI/TNP_rg_14" BEL "MFI/TNP_rg_13" BEL "MFI/TNP_rg_12" BEL
+        "MFI/TNP_rg_11" BEL "MFI/TNP_rg_10" BEL "MFI/TNP_rg_9" BEL
+        "MFI/TNP_rg_8" BEL "MFI/TNP_rg_7" BEL "MFI/TNP_rg_6" BEL
+        "MFI/TNP_rg_5" BEL "MFI/TNP_rg_4" BEL "MFI/TNP_rg_3" BEL
+        "MFI/TNP_rg_2" BEL "MFI/TNP_rg_1" BEL "MFI/TNP_rg_0" BEL
+        "MFI/TNI_rg_31" BEL "MFI/TNI_rg_30" BEL "MFI/TNI_rg_29" BEL
+        "MFI/TNI_rg_28" BEL "MFI/TNI_rg_27" BEL "MFI/TNI_rg_26" BEL
+        "MFI/TNI_rg_25" BEL "MFI/TNI_rg_24" BEL "MFI/TNI_rg_23" BEL
+        "MFI/TNI_rg_22" BEL "MFI/TNI_rg_21" BEL "MFI/TNI_rg_20" BEL
+        "MFI/TNI_rg_19" BEL "MFI/TNI_rg_18" BEL "MFI/TNI_rg_17" BEL
+        "MFI/TNI_rg_16" BEL "MFI/TNI_rg_15" BEL "MFI/TNI_rg_14" BEL
+        "MFI/TNI_rg_13" BEL "MFI/TNI_rg_12" BEL "MFI/TNI_rg_11" BEL
+        "MFI/TNI_rg_10" BEL "MFI/TNI_rg_9" BEL "MFI/TNI_rg_8" BEL
+        "MFI/TNI_rg_7" BEL "MFI/TNI_rg_6" BEL "MFI/TNI_rg_5" BEL
+        "MFI/TNI_rg_4" BEL "MFI/TNI_rg_3" BEL "MFI/TNI_rg_2" BEL
+        "MFI/TNI_rg_1" BEL "MFI/TNI_rg_0" BEL "MFI/TNC_rg_31" BEL
+        "MFI/TNC_rg_30" BEL "MFI/TNC_rg_29" BEL "MFI/TNC_rg_28" BEL
+        "MFI/TNC_rg_27" BEL "MFI/TNC_rg_26" BEL "MFI/TNC_rg_25" BEL
+        "MFI/TNC_rg_24" BEL "MFI/TNC_rg_23" BEL "MFI/TNC_rg_22" BEL
+        "MFI/TNC_rg_21" BEL "MFI/TNC_rg_20" BEL "MFI/TNC_rg_19" BEL
+        "MFI/TNC_rg_18" BEL "MFI/TNC_rg_17" BEL "MFI/TNC_rg_16" BEL
+        "MFI/TNC_rg_15" BEL "MFI/TNC_rg_14" BEL "MFI/TNC_rg_13" BEL
+        "MFI/TNC_rg_12" BEL "MFI/TNC_rg_11" BEL "MFI/TNC_rg_10" BEL
+        "MFI/TNC_rg_9" BEL "MFI/TNC_rg_8" BEL "MFI/TNC_rg_7" BEL
+        "MFI/TNC_rg_6" BEL "MFI/TNC_rg_5" BEL "MFI/TNC_rg_4" BEL
+        "MFI/TNC_rg_3" BEL "MFI/TNC_rg_2" BEL "MFI/TNC_rg_1" BEL
+        "MFI/TNC_rg_0" BEL "MFI/TKI_rg_31" BEL "MFI/TKI_rg_30" BEL
+        "MFI/TKI_rg_29" BEL "MFI/TKI_rg_28" BEL "MFI/TKI_rg_27" BEL
+        "MFI/TKI_rg_26" BEL "MFI/TKI_rg_25" BEL "MFI/TKI_rg_24" BEL
+        "MFI/TKI_rg_23" BEL "MFI/TKI_rg_22" BEL "MFI/TKI_rg_21" BEL
+        "MFI/TKI_rg_20" BEL "MFI/TKI_rg_19" BEL "MFI/TKI_rg_18" BEL
+        "MFI/TKI_rg_17" BEL "MFI/TKI_rg_16" BEL "MFI/TKI_rg_15" BEL
+        "MFI/TKI_rg_14" BEL "MFI/TKI_rg_13" BEL "MFI/TKI_rg_12" BEL
+        "MFI/TKI_rg_11" BEL "MFI/TKI_rg_10" BEL "MFI/TKI_rg_9" BEL
+        "MFI/TKI_rg_8" BEL "MFI/TKI_rg_7" BEL "MFI/TKI_rg_6" BEL
+        "MFI/TKI_rg_5" BEL "MFI/TKI_rg_4" BEL "MFI/TKI_rg_3" BEL
+        "MFI/TKI_rg_2" BEL "MFI/TKI_rg_1" BEL "MFI/TKI_rg_0" BEL
+        "MFI/TNO_rg_31" BEL "MFI/TNO_rg_30" BEL "MFI/TNO_rg_29" BEL
+        "MFI/TNO_rg_28" BEL "MFI/TNO_rg_27" BEL "MFI/TNO_rg_26" BEL
+        "MFI/TNO_rg_25" BEL "MFI/TNO_rg_24" BEL "MFI/TNO_rg_23" BEL
+        "MFI/TNO_rg_22" BEL "MFI/TNO_rg_21" BEL "MFI/TNO_rg_20" BEL
+        "MFI/TNO_rg_19" BEL "MFI/TNO_rg_18" BEL "MFI/TNO_rg_17" BEL
+        "MFI/TNO_rg_16" BEL "MFI/TNO_rg_15" BEL "MFI/TNO_rg_14" BEL
+        "MFI/TNO_rg_13" BEL "MFI/TNO_rg_12" BEL "MFI/TNO_rg_11" BEL
+        "MFI/TNO_rg_10" BEL "MFI/TNO_rg_9" BEL "MFI/TNO_rg_8" BEL
+        "MFI/TNO_rg_7" BEL "MFI/TNO_rg_6" BEL "MFI/TNO_rg_5" BEL
+        "MFI/TNO_rg_4" BEL "MFI/TNO_rg_3" BEL "MFI/TNO_rg_2" BEL
+        "MFI/TNO_rg_1" BEL "MFI/TNO_rg_0" BEL "MFI/TOBM_rg_31" BEL
+        "MFI/TOBM_rg_30" BEL "MFI/TOBM_rg_29" BEL "MFI/TOBM_rg_28" BEL
+        "MFI/TOBM_rg_27" BEL "MFI/TOBM_rg_26" BEL "MFI/TOBM_rg_25" BEL
+        "MFI/TOBM_rg_24" BEL "MFI/TOBM_rg_23" BEL "MFI/TOBM_rg_22" BEL
+        "MFI/TOBM_rg_21" BEL "MFI/TOBM_rg_20" BEL "MFI/TOBM_rg_19" BEL
+        "MFI/TOBM_rg_18" BEL "MFI/TOBM_rg_17" BEL "MFI/TOBM_rg_16" BEL
+        "MFI/TOBM_rg_15" BEL "MFI/TOBM_rg_14" BEL "MFI/TOBM_rg_13" BEL
+        "MFI/TOBM_rg_12" BEL "MFI/TOBM_rg_11" BEL "MFI/TOBM_rg_10" BEL
+        "MFI/TOBM_rg_9" BEL "MFI/TOBM_rg_8" BEL "MFI/TOBM_rg_7" BEL
+        "MFI/TOBM_rg_6" BEL "MFI/TOBM_rg_5" BEL "MFI/TOBM_rg_4" BEL
+        "MFI/TOBM_rg_3" BEL "MFI/TOBM_rg_2" BEL "MFI/TOBM_rg_1" BEL
+        "MFI/TOBM_rg_0" BEL "MFI/time_rst_reg" BEL "MFI/tick2_3" BEL
+        "MFI/tick2_2" BEL "MFI/tick4_3" BEL "MFI/tick4_2" BEL "MFI/sync_reg_3"
+        BEL "MFI/sync_reg_2" BEL "MFI/Mshreg_tick_TNO_1/SRL16E" BEL
+        "MFI/tick_TNO_1" BEL "MFI/Mshreg_tkp_reg6" BEL "MFI/tkp_reg6" BEL
+        "MFI/Mshreg_sync_reg_1/SRL16E" BEL "MFI/sync_reg_1" BEL
+        "MFI/Mshreg_tick2_1/SRL16E" BEL "MFI/tick2_1" BEL
+        "MFI/Mshreg_tick4_1/SRL16E" BEL "MFI/tick4_1" BEL
+        "OUT_F_5MHZ_ETALON_3V3" BEL "MF1US_controlCLK/sch64_0_BUFG.GCLKMUX"
+        BEL "MF1US_controlCLK/sch64_0_BUFG";
+TIMEGRP dcm1_CLKFX_BUF = BEL "MF1US_controlCLK/sch64_5" BEL
+        "MF1US_controlCLK/sch64_4" BEL "MF1US_controlCLK/sch64_3" BEL
+        "MF1US_controlCLK/sch64_2" BEL "MF1US_controlCLK/sch64_1" BEL
+        "MF1US_controlCLK/sch64_0" BEL "dcm1/CLKFX_BUFG_INST.GCLKMUX" BEL
+        "dcm1/CLKFX_BUFG_INST";
+TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+TS_MF1US_controlCLK_sch64_01 = PERIOD TIMEGRP "MF1US_controlCLK/sch64_01" 14
+        ns HIGH 50%;
+TS_dcm1_CLKFX_BUF = PERIOD TIMEGRP "dcm1_CLKFX_BUF" TS_clk / 3.2 HIGH 50%;
+SCHEMATIC END;
+

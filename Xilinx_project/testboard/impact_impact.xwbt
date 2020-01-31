@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Work\Project_Testboard\Xilinx_project\testboard\impact.xsl
+OUTFILE=C:\Work\Project_Testboard\Xilinx_project\testboard\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\Work\Project_Testboard\Xilinx_project\testboard
+LICENSE=iMPACT
+USER_INFO=iMPACT

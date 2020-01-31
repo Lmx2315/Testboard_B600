@@ -1,0 +1,391 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'top_modul'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s500e-pq208-4 -cm area -ir off -pr off
+-c 100 -o top_modul_map.ncd top_modul.ngd top_modul.pcf 
+Target Device  : xc3s500e
+Target Package : pq208
+Target Speed   : -4
+Mapper Version : spartan3e -- $Revision: 1.55 $
+Mapped Date    : Tue Apr 17 13:06:42 2018
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:   39
+Logic Utilization:
+  Number of Slice Flip Flops:         1,570 out of   9,312   16%
+  Number of 4 input LUTs:             1,315 out of   9,312   14%
+Logic Distribution:
+  Number of occupied Slices:          1,183 out of   4,656   25%
+    Number of Slices containing only related logic:   1,183 out of   1,183 100%
+    Number of Slices containing unrelated logic:          0 out of   1,183   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:       1,674 out of   9,312   17%
+    Number used as logic:             1,308
+    Number used as a route-thru:        359
+    Number used as Shift registers:       7
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                132 out of     158   83%
+  Number of BUFGMUXs:                     4 out of      24   16%
+  Number of DCMs:                         1 out of       4   25%
+
+Average Fanout of Non-Clock Nets:                3.63
+
+Peak Memory Usage:  341 MB
+Total REAL time to MAP completion:  4 secs 
+Total CPU time to MAP completion:   4 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:367 - The signal <clk_50MHZ_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <USART2_TX_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <USART3_TX_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TX_485_MG_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_REZERV_3V3_XP1_IBUF> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_TNC24V_3V3_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_TKI_3V3_XP1_IBUF> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_TNC_3V3_XP1_IBUF> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_TNI_1_3V3_XP1_IBUF> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_REZERV_1_UPR_3V3_IBUF> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <TXD_FTDI_2_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_TKP1_3V3_XP1_IBUF> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_REZERV_2_UPR_3V3_IBUF> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DATA_PD10_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DATA_PD11_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DATA_PD12_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DATA_PD13_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DATA_PD14_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DATA_PD15_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_TNO24V_3V3_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_TNI_3V3_XP1_IBUF> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_TKP_3V3_XP1_IBUF> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_T1_4_3V3_XP1_IBUF> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_TNO_3V3_XP1_IBUF> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_FT50OM_3V3_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <DATA_PD9_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_TNP_3V3_XP1_IBUF> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_TEST1_3V3_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_TEST2_3V3_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_REZERV1_3V3_XP1_IBUF> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_REZERV2_3V3_XP1_IBUF> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_TKI_1_3V3_XP1_IBUF> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_REZERV3_3V3_XP1_IBUF> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <MISO_W5100_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_REZERV4_3V3_XP1_IBUF> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_TOBM_3V3_XP1_IBUF> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_VKL_COM_FT_3V3_IBUF> is incomplete.
+   The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_SYNC1_3V3_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <IN_SYNC2_3V3_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network IN_TNC_3V3_XP1_IBUF has no load.
+INFO:LIT:395 - The above info message is repeated 39 more times for the
+   following (max. 5 shown):
+   IN_TOBM_3V3_XP1_IBUF,
+   MISO_W5100_IBUF,
+   IN_FT50OM_3V3_IBUF,
+   IN_TKP_3V3_XP1_IBUF,
+   USART2_TX_IBUF
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp dcm1/DCM_SP_INST, consult
+   the device Interactive Data Sheet.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   1 block(s) removed
+   8 block(s) optimized away
+   2 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "dcm1/CLKDV_BUFG_INST" (CKBUF) removed.
+ The signal "dcm1/CLKDV_BUF" is loadless and has been removed.
+The signal "reset1/Mshreg_a_0_0/Q" is sourceless and has been removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| BOOT0_FPGA                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| BOOT0_FTDI                         | IBUF             | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   | 0 / 0    |
+| BOOT_RX_MK                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| BOOT_TX_MK                         | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| CS_FPGA_MK                         | IBUF             | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   | 0 / 0    |
+| CS_W5100                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| CS_WIZ                             | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| DATA_PD8                           | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| DATA_PD9                           | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| DATA_PD10                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| DATA_PD11                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| DATA_PD12                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| DATA_PD13                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| DATA_PD14                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| DATA_PD15                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| DEBAG_PWM1                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| DEBAG_PWM2                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| INT1                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| INT2                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| INT3                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| INT4                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| INT5                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| INT6                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| INT7                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| INT8                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| INT9                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| INT_W5100                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   | 0 / 0    |
+| INTa                               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| IN_FT50OM_3V3                      | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_REZERV1_3V3_XP1                 | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_REZERV2_3V3_XP1                 | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_REZERV3_3V3_XP1                 | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_REZERV4_3V3_XP1                 | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_REZERV_1_UPR_3V3                | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_REZERV_2_UPR_3V3                | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_REZERV_3V3_XP1                  | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_SYNC1_3V3                       | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_SYNC2_3V3                       | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_T1_4_3V3_XP1                    | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_TEST1_3V3                       | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_TEST2_3V3                       | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_TKI_1_3V3_XP1                   | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_TKI_3V3_XP1                     | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_TKP1_3V3_XP1                    | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_TKP_3V3_XP1                     | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_TNC24V_3V3                      | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_TNC_3V3_XP1                     | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_TNI_1_3V3_XP1                   | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_TNI_3V3_XP1                     | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_TNO24V_3V3                      | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_TNO_3V3_XP1                     | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_TNP_3V3_XP1                     | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_TOBM_3V3_XP1                    | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| IN_VKL_COM_FT_3V3                  | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| MISO_MK                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| MISO_W5100                         | IBUF             | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   | 0 / 0    |
+| MK_DATA0                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| MK_DATA1                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| MK_DATA2                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| MK_DATA3                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| MK_DATA4                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| MK_DATA5                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| MK_DATA6                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| MK_DATA7                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| MK_DATA8                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| MOSI_MK                            | IBUF             | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   | 0 / 0    |
+| MOSI_W5100                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_AVARIA_KAN_1_FT_3V3            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_AVARIA_KAN_2_FT_3V3            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_AVARIA_KAN_3_FT_3V3            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_AVARIA_KAN_4_FT_3V3            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_AVARIA_PIT_1_FT_3V3            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_AVARIA_PIT_2_FT_3V3            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_CONTROL_K1_3V3                 | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_CONTROL_K2_3V3                 | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_F_5MHZ_ETALON_3V3              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_NORMA_TEMP_1U07FI_3V3          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_NORM_PIT_1FT_3V3               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_NORM_PIT_2FT_3V3               | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_PA_1U07_FI_3V3                 | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_RAB_KAN_1FT_3V3                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_RAB_KAN_2FT_3V3                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_RAB_KAN_3FT_3V3                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_RAB_KAN_4FT_3V3                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_REZERV1_3V3_XP2                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_REZERV2_3V3_XP2                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_REZERV3_3V3_XP2                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_REZERV4_3V3_XP2                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_REZERV5_3V3_XP1                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_REZERV_3V3_XP2                 | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_REZERV_KONTR_1_3V3             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_REZERV_KONTR_2_3V3             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_REZERV_KONTR_3_3V3             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_REZERV_KONTR_4_3V3             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_T1_4_3V3_XP2                   | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_T5MIN_60SEC_3V3                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_TEST1_3V3                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_TEST2_3V3                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_TEST3_3V3                      | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_TKI1_3V3_XP2                   | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_TKI_1_3V3_XP2                  | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_TKI_3V3_XP2                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_TKP1_3V3_XP2                   | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_TKP_3V3_XP2                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_TNC_3V3_XP2                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_TNI_1_3V3_XP2                  | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_TNI_3V3_XP2                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_TNO_3V3_XP2                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_TNP_3V3_XP2                    | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_TOBM_3V3_XP2                   | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| OUT_TX_3V3_XP1                     | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| PWDWN_ETHERNET_PLIS                | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| RESET_MK                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| RESET_MK_FTDI                      | IBUF             | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   | 0 / 0    |
+| RESET_WIZ                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| RE_485                             | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| RTS_485                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| RXD_FTDI_2                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| RX_485_MG                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| RX_FTDI_1                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| SCLK_MK                            | IBUF             | INPUT     | LVCMOS33             |       |          |      |              | PULLUP   | 0 / 0    |
+| SCLK_W5100                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| SRAM_A17                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| TXD_FTDI_2                         | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| TX_485_MG                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| TX_FTDI_1                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| USART2_RX                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| USART2_TX                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| USART3_RX                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          | 0 / 0    |
+| USART3_TX                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| clk                                | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
+| clk_50MHZ                          | IBUF             | INPUT     | LVCMOS33             |       |          |      |              |          | 0 / 0    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

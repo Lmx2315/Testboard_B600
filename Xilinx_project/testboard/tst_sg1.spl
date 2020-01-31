@@ -1,0 +1,21 @@
+[Inputs]
+clk
+TNO
+TNC
+TNI
+TKI
+TNP
+TKP
+TOBM
+IntI
+IntP
+Error
+=upr[2:0]=
+[Outputs]
+sig1
+sig2
+contrl
+[BiDir]
+[ATTRIBUTES]
+VeriModel tst_sg1
+

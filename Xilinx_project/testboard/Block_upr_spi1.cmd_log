@@ -1,0 +1,4 @@
+vhdtdtfi -lib work C:/Work/Project_Testboard/Xilinx_project/testboard/spi_modul.v -lang verilog -prj testboard -o Block_upr_spi1.spl -module Block_upr_spi1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Block_upr_spi1.spl C:/Work/Project_Testboard/Xilinx_project/testboard/Block_upr_spi1.sym 
+vhdtdtfi -lib work C:/Work/Project_Testboard/Xilinx_project/testboard/spi_modul.v -lang verilog -prj testboard -o Block_upr_spi1.spl -module Block_upr_spi1 -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Block_upr_spi1.spl C:/Work/Project_Testboard/Xilinx_project/testboard/Block_upr_spi1.sym 

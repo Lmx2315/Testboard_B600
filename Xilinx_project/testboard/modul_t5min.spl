@@ -1,0 +1,9 @@
+[Inputs]
+clk
+t1us
+[Outputs]
+t5min
+[BiDir]
+[ATTRIBUTES]
+VeriModel modul_t5min
+

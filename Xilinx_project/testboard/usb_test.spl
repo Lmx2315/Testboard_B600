@@ -1,0 +1,9 @@
+[Inputs]
+upr
+clk
+[Outputs]
+tx_485
+[BiDir]
+[ATTRIBUTES]
+VeriModel usb_test
+

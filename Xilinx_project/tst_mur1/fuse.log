@@ -1,0 +1,62 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul_isim_beh.exe -prj C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul_beh.prj work.top_modul work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 12
+Turning on mult-threading, number of parallel sub-compilation jobs: 24 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Work/Project_Testboard/Xilinx_project/testboard/tst_rst_modul.v" into library work
+Analyzing Verilog file "C:/Work/Project_Testboard/Xilinx_project/testboard/spi_modul.v" into library work
+Analyzing Verilog file "C:/Work/Project_Testboard/Xilinx_project/testboard/reset_long.v" into library work
+Analyzing Verilog file "C:/Work/Project_Testboard/Xilinx_project/testboard/read_and_work.v" into library work
+Analyzing Verilog file "C:/Work/Project_Testboard/Xilinx_project/testboard/modul_t5min.v" into library work
+Analyzing Verilog file "C:/Work/Project_Testboard/Xilinx_project/testboard/dcm_clk.v" into library work
+Analyzing Verilog file "C:/Work/Project_Testboard/Xilinx_project/testboard/control_TNO_TNC.v" into library work
+Analyzing Verilog file "C:/Work/Project_Testboard/Xilinx_project/testboard/control_F5_F64.v" into library work
+Analyzing Verilog file "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.v" Line 347: Size mismatch in connection of port <event_rst>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.v" Line 348: Size mismatch in connection of port <PPI_fail>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.v" Line 368: Size mismatch in connection of port <rst>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.v" Line 503: Size mismatch in connection of port <en>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul.v" Line 505: Size mismatch in connection of port <en>. Formal port size is 1-bit while actual signal size is 32-bit.
+Completed static elaboration
+Compiling module test_led
+Compiling module modul_t5min
+Compiling module control_F5_F64
+Compiling module BUFG
+Compiling module IBUFG
+Compiling module dcm_sp_clock_divide_by_2
+Compiling module dcm_sp_maximum_period_check(cloc...
+Compiling module dcm_sp_maximum_period_check(cloc...
+Compiling module dcm_sp_clock_lost
+Compiling module DCM_SP(CLKDV_DIVIDE=4.0,CLKFX_DI...
+Compiling module dcm_clk
+Compiling module rst
+Compiling module Block_control_spi
+Compiling module Block_upr_spi1(Nbit=16,param_adr...
+Compiling module read_and_work
+Compiling module control_TNO_TNC
+Compiling module Block_control_spi(Nbit=32,param_...
+Compiling module Block_control_spi(Nbit=32,param_...
+Compiling module Block_control_spi(Nbit=32,param_...
+Compiling module Block_control_spi(Nbit=32,param_...
+Compiling module Block_control_spi(Nbit=16,param_...
+Compiling module Block_upr_spi1(Nbit=32,param_adr...
+Compiling module Block_upr_spi1(Nbit=32,param_adr...
+Compiling module Block_upr_spi1(Nbit=32,param_adr...
+Compiling module Block_upr_spi1(Nbit=32,param_adr...
+Compiling module Block_upr_spi1(Nbit=32,param_adr...
+Compiling module Block_upr_spi1(Nbit=32,param_adr...
+Compiling module Block_upr_spi1(Nbit=32,param_adr...
+Compiling module Block_upr_spi1(Nbit=32,param_adr...
+Compiling module reset_long
+Compiling module reset_long(delay=20000)
+Compiling module reset_long(delay=4000000)
+Compiling module top_modul
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 11 sub-compilation(s) to finish...
+Compiled 34 Verilog Units
+Built simulation executable C:/Work/Project_Testboard/Xilinx_project/testboard/top_modul_isim_beh.exe
+Fuse Memory Usage: 35832 KB
+Fuse CPU Usage: 826 ms

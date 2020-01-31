@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">clk5mhz</arg> has no load.
+</msg>
+
+<msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">30</arg> more times for the following (max. 5 shown):
+<arg fmt="%s" index="3">wCMND&lt;0&gt;,
+wCMND&lt;10&gt;,
+wCMND&lt;11&gt;,
+wCMND&lt;12&gt;,
+wCMND&lt;13&gt;</arg>
+To see the details of these <arg fmt="%s" index="4">info</arg> messages, please use the -detail switch.
+</msg>
+
+<msg type="info" file="MapLib" num="562" delta="old" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="old" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="warning" file="LIT" num="177" delta="old" >Clock buffer <arg fmt="%s" index="1">BUFGMUX symbol &quot;physical_group_xSCLK_MK/U0&quot; (output signal=xSCLK_MK)</arg> does not drive clock loads. Driving only non-clock loads with a clock buffer will cause ALL of the dedicated clock routing resources for this buffer to be wasted. Some of the non-clock loads are (maximum of 5 listed): 
+<arg fmt="%s" index="2">Pin D of spi_control1/Mshreg_front_clk_spi_1/SRL16E
+Pin D of spi_upr1/Mshreg_front_clk_spi_1/SRL16E
+Pin D of spi_upr2/Mshreg_front_clk_spi_1/SRL16E
+Pin D of spi_upr3/Mshreg_front_clk_spi_1/SRL16E
+Pin D of spi_rd_imp0/Mshreg_front_clk_spi_1/SRL16E</arg>
+</msg>
+
+<msg type="warning" file="LIT" num="177" delta="old" >Clock buffer <arg fmt="%s" index="1">BUFGMUX symbol &quot;physical_group_xMOSI_MK/U1&quot; (output signal=xMOSI_MK)</arg> does not drive clock loads. Driving only non-clock loads with a clock buffer will cause ALL of the dedicated clock routing resources for this buffer to be wasted. Some of the non-clock loads are (maximum of 5 listed): 
+<arg fmt="%s" index="2">Pin D of spi_control1/data_in_0
+Pin I2 of spi_upr1/data_in_mux0000&lt;0&gt;2
+Pin I2 of spi_upr2/data_in_mux0000&lt;0&gt;2
+Pin I2 of spi_upr3/data_in_mux0000&lt;0&gt;2
+Pin D of spi_rd_imp0/data_in_0</arg>
+</msg>
+
+<msg type="warning" file="LIT" num="177" delta="old" >Clock buffer <arg fmt="%s" index="1">BUFGMUX symbol &quot;physical_group_xCS_FPGA_MK/U2&quot; (output signal=xCS_FPGA_MK)</arg> does not drive clock loads. Driving only non-clock loads with a clock buffer will cause ALL of the dedicated clock routing resources for this buffer to be wasted. Some of the non-clock loads are (maximum of 5 listed): 
+<arg fmt="%s" index="2">Pin CE of spi_control1/sch_0
+Pin CE of spi_control1/sch_1
+Pin CE of spi_control1/sch_2
+Pin CE of spi_control1/sch_3
+Pin CE of spi_control1/sch_4</arg>
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">clk_50MHZ_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">USART3_TX_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">RX_485_MG_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">TXD_FTDI_2_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">DATA_PD11_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">DATA_PD12_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">DATA_PD13_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">DATA_PD14_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">DATA_PD15_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="772" delta="old" >To achieve optimal frequency synthesis performance with the CLKFX and CLKFX180 outputs of the DCM comp <arg fmt="%s" index="1">dcm1/DCM_SP_INST</arg>, consult the device Interactive Data Sheet.
+</msg>
+
+<msg type="info" file="PhysDesignRules" num="772" delta="old" >To achieve optimal frequency synthesis performance with the CLKFX and CLKFX180 outputs of the DCM comp <arg fmt="%s" index="1">dcm_32/DCM_SP_INST</arg>, consult the device Interactive Data Sheet.
+</msg>
+
+</messages>
+

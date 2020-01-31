@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/Work/Project_Testboard/Xilinx_project/testboard/tst_rst_modul.v -lang verilog -prj testboard -o test_led.spl -module test_led -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e test_led.spl C:/Work/Project_Testboard/Xilinx_project/testboard/test_led.sym 
