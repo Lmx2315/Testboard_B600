@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-01-27T16:06:47</DateModified>
+  <DateModified>2021-01-14T13:21:30</DateModified>
   <ModuleName>top_modul</ModuleName>
   <SummaryTimeStamp>2020-01-27T15:30:54</SummaryTimeStamp>
-  <SavedFilePath>C:/Work/Project_Testboard/Xilinx_project/testboard/iseconfig/top_modul.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Work/Project_Testboard/Xilinx_project/testboard\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Work/Testboard_B600/Xilinx_project/testboard/iseconfig/top_modul.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Work/Testboard_B600/Xilinx_project/testboard\</ImplementationReportsDirectory>
   <DateInitialized>2018-02-22T15:24:57</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
